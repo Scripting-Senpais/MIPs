@@ -1,0 +1,1 @@
+-w -s "E:\HW\design1\library.cfg"  -j "E:\HW\design1\design1\projlib.cfg"  -d "E:\HW\design1\design1\compile\"  -work design1 -dbg -e 100 "E:\HW\design1\design1\src\MIPs.vhd" 
