@@ -1,3 +1,11 @@
-14
+47
+~E 1 "./src/MUX.vhd" 4 mux
+~A 1 "./src/MUX.vhd" 16 behave
 ~E 1 "./src/MIPs.vhd" 4 mips
 ~A 1 "./src/MIPs.vhd" 13 mips
+~E 1 "./src/Sign_extender.vhd" 4 sign_extender
+~A 1 "./src/Sign_extender.vhd" 11 behave
+~E 1 "./src/MUX_TB.vhd" 4 mux_tb
+~A 1 "./src/MUX_TB.vhd" 7 tb
+~E 1 "./src/SignE_TB.vhd" 4 signe_tb
+~A 1 "./src/SignE_TB.vhd" 8 tb

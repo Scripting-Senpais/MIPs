@@ -1,1 +1,5 @@
 i<>.\src\MIPs.vhd
+i<>.\src\MUX.vhd
+i<>.\src\MUX_TB.vhd
+i<>.\src\Sign_extender.vhd
+i<>.\src\SignE_TB.vhd
