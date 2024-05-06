@@ -40,3 +40,24 @@ V 000045 55 710           1714945726704 MIPs
     (_type (_external ~extieee.std_logic_1164.std_ulogic (ieee std_logic_1164 std_ulogic)))
   )
 )
+V 000045 55 710           1714990938728 MIPs
+(_unit VHDL (mips 0 4 (mips 0 13 ))
+  (_version v33)
+  (_time 1714990938727 2024.05.06 13:22:18)
+  (_source (\./src/MIPs.vhd\))
+  (_use (std(standard))(ieee(std_logic_1164)))
+  (_parameters dbg )
+  (_entity
+    (_time 1714945711767)
+    (_use )
+  )
+  (_object
+    (_port (_internal clk ~extieee.std_logic_1164.std_logic 0 6 (_entity (_in ))))
+    (_port (_internal reset ~extieee.std_logic_1164.std_logic 0 7 (_entity (_in ))))
+    (_subprogram
+      (_external resolved (ieee std_logic_1164 0))
+    )
+    (_type (_external ~extieee.std_logic_1164.std_logic (ieee std_logic_1164 std_logic)))
+    (_type (_external ~extieee.std_logic_1164.std_ulogic (ieee std_logic_1164 std_ulogic)))
+  )
+)

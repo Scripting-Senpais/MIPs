@@ -1,0 +1,12 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: Architecture 'mips' of entity 'mips' not found in library 'design1'.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# Design Explorer: Shortcut to "C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1.aws" design added.
+acom $DSN/src/MIPs.vhd
+# Compile...
+# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\MIPs.vhd
+# Compile Entity "MIPs"
+# Entity `MIPs' has been skipped - no difference detected.
+# Compile Architecture "MIPs" of Entity "MIPs"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]

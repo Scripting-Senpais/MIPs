@@ -8,7 +8,7 @@ entity MIPs is
 	     );
 end MIPs;
 
-
+		 --just testing
 
 architecture MIPs of MIPs is
 begin
