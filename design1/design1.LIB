@@ -1,60 +1,70 @@
-timestamp=1714999485368
+timestamp=1715006353240
 
 [mips]
-A/mips=A/MIPs 21|./src/MIPs.vhd|13|1*2268
-H/mips=0*1580
+A/mips=A/MIPs 21|./src/MIPs.vhd|12|1*71423
+H/mips=0*92091
 R=./src/MIPs.vhd|4
 V=0*827
 
+[mips_tb]
+A/tb=A/TB 21|./src/MIPS_TB.vhd|8|1*82312
+B/tb=3*27720
+H/tb=0*104769
+R=./src/MIPS_TB.vhd|4
+V=0*34262
+
 [mux]
-A/behave=A/Behave 21|./src/MUX.vhd|16|1*3023
-B/behave=3*0
-H/behave=0*2229
+A/behave=A/Behave 21|./src/MUX.vhd|16|1*75014
+B/behave=3*23590
+H/behave=0*97838
 R=./src/MUX.vhd|4
 V=0*3463
 
 [mux_tb]
-A/tb=21|./src/MUX_TB.vhd|7|1*4789
-B/tb=3*965
-H/tb=0*5905
+A/tb=21|./src/MUX_TB.vhd|7|1*76780
+B/tb=3*24555
+H/tb=0*98145
 R=./src/MUX_TB.vhd|4
 V=0*9175
 
 [sign_extender]
-A/behave=A/Behave 21|./src/Sign_extender.vhd|11|1*6772
-B/behave=3*2251
-H/behave=0*9597
+A/behave=A/Behave 21|./src/Sign_extender.vhd|11|1*78763
+B/behave=3*25841
+H/behave=0*101186
 R=./src/Sign_extender.vhd|4
 V=0*10627
 
 [signe_tb]
-A/tb=A/TB 21|./src/SignE_TB.vhd|8|1*8166
-B/tb=3*3036
-H/tb=0*11912
+A/tb=A/TB 21|./src/SignE_TB.vhd|8|1*80157
+B/tb=3*26626
+H/tb=0*101604
 R=./src/SignE_TB.vhd|4
 V=0*15316
 
 [~A]
+./src/MIPS_TB.vhd~MIPS_TB=0*33821*33963
+./src/MIPS_TB.vhd~TBMIPS_TB=0*105436*105940
 ./src/MIPs.vhd~MIPs=0*0*186
-./src/MIPs.vhd~MIPsMIPs=0*1663*1766
-./src/MUX.vhd~BehaveMUX=0*2316*2473
+./src/MIPs.vhd~MIPsMIPs=0*96883*97775
+./src/MUX.vhd~BehaveMUX=0*97925*98082
 ./src/MUX.vhd~MUX=0*1829*2172
 ./src/MUX_TB.vhd~MUX_TB=0*5704*5842
-./src/MUX_TB.vhd~tbMUX_TB=0*8166*8881
+./src/MUX_TB.vhd~tbMUX_TB=0*100406*101121
 ./src/SignE_TB.vhd~SignE_TB=0*11699*11845
-./src/SignE_TB.vhd~TBSignE_TB=0*14412*15008
-./src/Sign_extender.vhd~BehaveSign_extender=0*9684*9932
+./src/SignE_TB.vhd~TBSignE_TB=0*104104*104700
+./src/Sign_extender.vhd~BehaveSign_extender=0*101273*101521
 ./src/Sign_extender.vhd~Sign_extender=0*9251*9520
-ModifyID=47
+ModifyID=231
 Version=73
 
 [~MFT]
-0=57|0design1.mgf|15316|747
-1=9|1design1.mgf|8166|1510
-3=3|3design1.mgf|3036|0
+0=251|0design1.mgf|105940|84103
+1=72|1design1.mgf|82312|70665
+3=48|3design1.mgf|27720|23590
 
 [~U]
 mips=MIPs 11|0*494|0*620
+mips_tb=MIPS_TB 11|0*34028|0*34090
 mux=MUX 11|0*2536|0*2790
 mux_tb=MUX_TB 11|0*8946|0*9005
 sign_extender=Sign_extender 11|0*10015|0*10205

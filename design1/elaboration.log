@@ -1,11 +1,13 @@
-elbread.dll ver. 1.0.5.365 Mon May 06 00:48:32 2024
+elbread.dll ver. 1.0.5.365 Mon May 06 17:37:38 2024
 
 
---------------------------------
-Entity  | Architecture | Library
---------------------------------
-mips    | mips         | design1
---------------------------------
+---------------------------------------
+Entity         | Architecture | Library
+---------------------------------------
+mips           | mips         | design1
+mux            | behave       | design1
+sign_extender  | behave       | design1
+---------------------------------------
 
 -------------------------
 Package         | Library

@@ -22,9 +22,26 @@ SYNTH_TOOL=<none>
 IMPL_TOOL=<none>
 FAMILY=
 FLOWTOOLS=ONLY_IMPL
+FUNC_LIB=design1
 
 [IMPLEMENTATION]
 UCF=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[SIM.FUNC]
+FJD=FunctionalSimJob1
+FST=-all
+OPTION=0
+SERVERFARM_INCLUDE_INPUT_FILES=*.*
+SERVERFARM_EXCLUDE_INPUT_FILES=log\*.*:synthesis\*.*:implement\*.*
+TOPLEVEL=mips_tb
+WAVEFORMS=
+DEFWAVE=0
 
 [Files]
 /MIPs.vhd=-1
@@ -32,6 +49,8 @@ UCF=
 /MUX_TB.vhd=-1
 /Sign_extender.vhd=-1
 /SignE_TB.vhd=-1
+/MIPS_TB.vhd=-1
+/MIPS_test1.awf=-1
 
 [Files.Data]
 .\src\MIPs.vhd=VHDL Source Code
@@ -39,10 +58,6 @@ UCF=
 .\src\MUX_TB.vhd=VHDL Source Code
 .\src\Sign_extender.vhd=VHDL Source Code
 .\src\SignE_TB.vhd=VHDL Source Code
-
-[HierarchyViewer]
-SortInfo=u
-HierarchyInformation=
-ShowHide=ShowTopLevel
-Selected=
+.\src\MIPS_TB.vhd=VHDL Source Code
+.\src\MIPS_test1.awf=Waveform File
 

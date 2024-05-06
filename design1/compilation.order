@@ -3,3 +3,4 @@
 .\src\MUX_TB.vhd
 .\src\Sign_extender.vhd
 .\src\SignE_TB.vhd
+.\src\MIPS_TB.vhd
