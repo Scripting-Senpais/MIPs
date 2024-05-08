@@ -6,3 +6,4 @@
 .\src\MIPS_TB.vhd
 .\src\ALU.vhd
 .\src\RegisterFile.vhd
+.\src\InstructionMemory.vhd

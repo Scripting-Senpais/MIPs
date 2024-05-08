@@ -1,4 +1,4 @@
-timestamp=1715127960259
+timestamp=1715128038017
 
 [alu]
 A/behavioral=A/Behavioral 21|./src/ALU.vhd|15|1*98997
@@ -6,6 +6,13 @@ B/behavioral=3*37616
 H/behavioral=0*124723
 R=./src/ALU.vhd|5
 V=0*108685
+
+[instructionmemory]
+A/behavioral=A/Behavioral 21|./src/InstructionMemory.vhd|12|1*111746
+B/behavioral=3*41996
+H/behavioral=0*134903
+R=./src/InstructionMemory.vhd|5
+V=0*137991
 
 [mips]
 A/mips=A/MIPs 21|./src/MIPs.vhd|12|1*86517
@@ -58,6 +65,8 @@ V=0*15316
 [~A]
 ./src/ALU.vhd~ALU=0*106007*106378
 ./src/ALU.vhd~BehavioralALU=0*125380*125968
+./src/InstructionMemory.vhd~BehavioralInstructionMemory=0*136542*137233
+./src/InstructionMemory.vhd~InstructionMemory=0*134498*134818
 ./src/MIPS_TB.vhd~MIPS_TB=0*33821*33963
 ./src/MIPS_TB.vhd~TBMIPS_TB=0*124152*124656
 ./src/MIPs.vhd~MIPs=0*0*186
@@ -72,16 +81,17 @@ V=0*15316
 ./src/SignE_TB.vhd~TBSignE_TB=0*122820*123416
 ./src/Sign_extender.vhd~BehaveSign_extender=0*119989*120237
 ./src/Sign_extender.vhd~Sign_extender=0*9251*9520
-ModifyID=274
+ModifyID=281
 Version=73
 
 [~MFT]
-0=309|0design1.mgf|131373|99331
-1=82|1design1.mgf|101574|73242
-3=62|3design1.mgf|40442|32016
+0=317|0design1.mgf|137991|99331
+1=83|1design1.mgf|111746|73242
+3=63|3design1.mgf|41996|32016
 
 [~U]
 alu=ALU 11|0*107747|0*107996
+instructionmemory=InstructionMemory 11|0*137328|0*137535
 mips=MIPs 11|0*494|0*620
 mips_tb=MIPS_TB 11|0*34028|0*34090
 mux=MUX 11|0*2536|0*2790
