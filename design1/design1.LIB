@@ -1,4 +1,11 @@
-timestamp=1715006353240
+timestamp=1715127680270
+
+[alu]
+A/behavioral=A/Behavioral 21|./src/ALU.vhd|15|1*83940
+B/behavioral=3*29190
+H/behavioral=0*106435
+R=./src/ALU.vhd|5
+V=0*108685
 
 [mips]
 A/mips=A/MIPs 21|./src/MIPs.vhd|12|1*71423
@@ -42,6 +49,8 @@ R=./src/SignE_TB.vhd|4
 V=0*15316
 
 [~A]
+./src/ALU.vhd~ALU=0*106007*106378
+./src/ALU.vhd~BehavioralALU=0*107092*107680
 ./src/MIPS_TB.vhd~MIPS_TB=0*33821*33963
 ./src/MIPS_TB.vhd~TBMIPS_TB=0*105436*105940
 ./src/MIPs.vhd~MIPs=0*0*186
@@ -54,15 +63,16 @@ V=0*15316
 ./src/SignE_TB.vhd~TBSignE_TB=0*104104*104700
 ./src/Sign_extender.vhd~BehaveSign_extender=0*101273*101521
 ./src/Sign_extender.vhd~Sign_extender=0*9251*9520
-ModifyID=231
+ModifyID=238
 Version=73
 
 [~MFT]
-0=251|0design1.mgf|105940|84103
-1=72|1design1.mgf|82312|70665
-3=48|3design1.mgf|27720|23590
+0=259|0design1.mgf|108685|84103
+1=73|1design1.mgf|83940|70665
+3=49|3design1.mgf|29190|23590
 
 [~U]
+alu=ALU 11|0*107747|0*107996
 mips=MIPs 11|0*494|0*620
 mips_tb=MIPS_TB 11|0*34028|0*34090
 mux=MUX 11|0*2536|0*2790

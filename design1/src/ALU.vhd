@@ -1,0 +1,44 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+ENTITY ALU IS
+	PORT(
+	A1 : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+	A2 : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+	ALU_CONTROL : IN STD_LOGIC_VECTOR (2 DOWNTO 0);
+	ALU_RESULT : OUT STD_LOGIC_VECTOR (31 DOWNTO 0);
+	ZERO : OUT STD_LOGIC
+	);	
+END ALU;
+
+ARCHITECTURE Behavioral OF ALU IS
+	SIGNAL RESULTX : STD_LOGIC_VECTOR(31 DOWNTO 0);
+BEGIN
+	
+	PROCESS(A1, A2, ALU_CONTROL)
+	BEGIN
+		CASE ALU_CONTROL IS
+			WHEN "001" =>  -- ADDITION
+			RESULTX <= STD_LOGIC_VECTOR(UNSIGNED(A1) + UNSIGNED(A2));
+			WHEN "011" =>	-- SUB
+			RESULTX <= STD_LOGIC_VECTOR(UNSIGNED(A1) - UNSIGNED(A2));
+			WHEN "111" =>  -- AND
+			RESULTX <= A1 AND A2;
+			WHEN "010" =>  -- OR
+			RESULTX <= A1 OR A2;
+			WHEN OTHERS => NULL;
+			RESULTX <= x"00000000";	   
+		
+		END CASE;
+-- The reason i used a signal[RESULTX] to sore the output not dircetly store it in
+-- "ALU_RESULT" because i will need to read it to decide the value of "ZERO"
+-- and it's not possible to read an output
+			
+	END PROCESS;
+	
+	ALU_RESULT <= RESULTX;
+	ZERO <= '1' WHEN RESULTX = x"00000000" ELSE
+			'0';
+
+END Behavioral;
