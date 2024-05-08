@@ -1,1 +1,1 @@
--w -s "d:\Uni\PROJECTS\HW Project\MIPs\library.cfg"  -j "d:\Uni\PROJECTS\HW Project\MIPs\design1\projlib.cfg"  -d "d:\Uni\PROJECTS\HW Project\MIPs\design1\compile\"  -work design1 -dbg -e 100 "d:\Uni\PROJECTS\HW Project\MIPs\design1\src\ALU.vhd" 
+-w -s "d:\Uni\PROJECTS\HW Project\MIPs\library.cfg"  -j "d:\Uni\PROJECTS\HW Project\MIPs\design1\projlib.cfg"  -d "d:\Uni\PROJECTS\HW Project\MIPs\design1\compile\"  -work design1 -dbg -e 100 "d:\Uni\PROJECTS\HW Project\MIPs\design1\src\TestBench\registerfile_TB.vhd" 

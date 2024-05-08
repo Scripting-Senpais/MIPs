@@ -8,3 +8,4 @@
 .\src\TestBench\MIPS_TB.vhd
 .\src\TestBench\MUX_TB.vhd
 .\src\TestBench\alu_TB.vhd
+.\src\TestBench\registerfile_TB.vhd

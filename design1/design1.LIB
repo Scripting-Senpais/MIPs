@@ -1,4 +1,4 @@
-timestamp=1715186819551
+timestamp=1715203823371
 
 [alu]
 A/behavioral=A/Behavioral 21|./src/ALU.vhd|17|1*148066
@@ -49,11 +49,18 @@ R=./src/MUX_TB.vhd|4
 V=0*9175
 
 [registerfile]
-A/behavioral=A/Behavioral 21|./src/RegisterFile.vhd|17|1*131934
-B/behavioral=3*50777
-H/behavioral=0*166328
+A/behavioral=A/Behavioral 21|./src/RegisterFile.vhd|17|1*161816
+B/behavioral=3*60010
+H/behavioral=0*186943
 R=./src/RegisterFile.vhd|5
 V=0*131373
+
+[registerfile_tb]
+A/tb_architecture=A/TB_ARCHITECTURE 21|./src/TestBench/registerfile_TB.vhd|10|1*171988
+B/tb_architecture=3*61564
+H/tb_architecture=0*192476
+R=./src/TestBench/registerfile_TB.vhd|7
+V=0*192372
 
 [sign_extender]
 A/behave=A/Behave 21|./src/Sign_extender.vhd|11|1*93857
@@ -73,6 +80,10 @@ V=0*15316
 E=1*147638
 R=./src/TestBench/alu_TB.vhd|64
 
+[testbench_for_registerfile]
+E=1*175918
+R=./src/TestBench/registerfile_TB.vhd|62
+
 [~A]
 ./src/ALU.vhd~ALU=0*148660*149092
 ./src/ALU.vhd~BehavioralALU=0*180874*182044
@@ -86,7 +97,7 @@ R=./src/TestBench/alu_TB.vhd|64
 ./src/MUX.vhd~MUX=0*1829*2172
 ./src/MUX_TB.vhd~MUX_TB=0*5704*5842
 ./src/MUX_TB.vhd~tbMUX_TB=0*119122*119837
-./src/RegisterFile.vhd~BehavioralRegisterFile=0*169208*171075
+./src/RegisterFile.vhd~BehavioralRegisterFile=0*189823*191690
 ./src/RegisterFile.vhd~RegisterFile=0*126035*126567
 ./src/SignE_TB.vhd~SignE_TB=0*11699*11845
 ./src/SignE_TB.vhd~TBSignE_TB=0*173660*174289
@@ -95,13 +106,16 @@ R=./src/TestBench/alu_TB.vhd|64
 ./src/TestBench/alu_TB.vhd~TB_ARCHITECTUREalu_tb=0*178499*179590
 ./src/TestBench/alu_TB.vhd~TESTBENCH_FOR_alualu_tb=0*179678*179915
 ./src/TestBench/alu_TB.vhd~alu_tb=0*160087*160297
-ModifyID=373
+./src/TestBench/registerfile_TB.vhd~RegisterFile_TB=0*191775*191988
+./src/TestBench/registerfile_TB.vhd~TB_ARCHITECTURERegisterFile_TB=0*197834*199160
+./src/TestBench/registerfile_TB.vhd~TESTBENCH_FOR_registerfileRegisterFile_TB=0*199266*199575
+ModifyID=395
 Version=73
 
 [~MFT]
-0=411|0design1.mgf|182044|133551
-1=105|1design1.mgf|148066|102819
-3=78|3design1.mgf|54952|45602
+0=433|0design1.mgf|199575|143215
+1=111|1design1.mgf|175918|123163
+3=83|3design1.mgf|61564|47156
 
 [~U]
 alu=11|0*151255|0*151530
@@ -112,7 +126,9 @@ mips_tb=MIPS_TB 11|0*34028|0*34090
 mux=MUX 11|0*2536|0*2790
 mux_tb=MUX_TB 11|0*8946|0*9005
 registerfile=RegisterFile 11|0*130002|0*130381
+registerfile_tb=RegisterFile_TB 11|0*192079|0*192165
 sign_extender=Sign_extender 11|0*10015|0*10205
 signe_tb=SignE_TB 11|0*15077|0*15142
 testbench_for_alu=TESTBENCH_FOR_alu 2||
+testbench_for_registerfile=TESTBENCH_FOR_registerfile 2||
 
