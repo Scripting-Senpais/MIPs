@@ -1,4 +1,4 @@
-343
+349
 ~E 1 "./src/MIPs.vhd" 4 mips
 ~A 1 "./src/MIPs.vhd" 12 mips
 ~E 1 "./src/TestBench/alu_TB.vhd" 8 alu_tb

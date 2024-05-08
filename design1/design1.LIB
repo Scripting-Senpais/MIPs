@@ -1,4 +1,4 @@
-timestamp=1715131436006
+timestamp=1715132093178
 
 [alu]
 A/behavioral=A/Behavioral 21|./src/ALU.vhd|17|1*120794
@@ -49,9 +49,9 @@ R=./src/MUX_TB.vhd|4
 V=0*9175
 
 [registerfile]
-A/behavioral=A/Behavioral 21|./src/RegisterFile.vhd|17|1*101574
-B/behavioral=3*40442
-H/behavioral=0*126642
+A/behavioral=A/Behavioral 21|./src/RegisterFile.vhd|17|1*131934
+B/behavioral=3*50777
+H/behavioral=0*166328
 R=./src/RegisterFile.vhd|5
 V=0*131373
 
@@ -86,7 +86,7 @@ R=./src/TestBench/alu_TB.vhd|66
 ./src/MUX.vhd~MUX=0*1829*2172
 ./src/MUX_TB.vhd~MUX_TB=0*5704*5842
 ./src/MUX_TB.vhd~tbMUX_TB=0*119122*119837
-./src/RegisterFile.vhd~BehavioralRegisterFile=0*128786*129917
+./src/RegisterFile.vhd~BehavioralRegisterFile=0*169208*171075
 ./src/RegisterFile.vhd~RegisterFile=0*126035*126567
 ./src/SignE_TB.vhd~SignE_TB=0*11699*11845
 ./src/SignE_TB.vhd~TBSignE_TB=0*122820*123416
@@ -95,13 +95,13 @@ R=./src/TestBench/alu_TB.vhd|66
 ./src/TestBench/alu_TB.vhd~TB_ARCHITECTUREalu_tb=0*164511*165555
 ./src/TestBench/alu_TB.vhd~TESTBENCH_FOR_alualu_tb=0*166001*166238
 ./src/TestBench/alu_TB.vhd~alu_tb=0*160087*160297
-ModifyID=343
+ModifyID=349
 Version=73
 
 [~MFT]
-0=383|0design1.mgf|166238|119320
-1=95|1design1.mgf|131506|83109
-3=70|3design1.mgf|49250|36369
+0=389|0design1.mgf|171075|122680
+1=97|1design1.mgf|131934|93281
+3=72|3design1.mgf|50777|37923
 
 [~U]
 alu=11|0*151255|0*151530
