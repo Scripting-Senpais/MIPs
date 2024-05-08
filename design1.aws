@@ -4,7 +4,7 @@ Version=6.3
 design1=.\design1\design1.adf
 [Browser]
 sort=order
-mode=none
+mode=asc
 [Order]
 order=1
 macro=

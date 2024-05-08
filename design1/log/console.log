@@ -1,8 +1,4 @@
-# ELBREAD: Elaboration process.
-# ELBREAD: Error: Architecture 'tb_architecture' of entity 'datamemory_tb' not found in library 'design1'.
-# ELBREAD: Error: Elaboration process completed with errors.
-# Design: Error: Elaboration failed
-acom $DSN/src/mips.vhd $DSN/src/mux.vhd $DSN/src/sign_extender.vhd $DSN/src/alu.vhd $DSN/src/registerfile.vhd $DSN/src/instructionmemory.vhd $DSN/src/datamemory.vhd $DSN/src/testbench/signe_tb.vhd $DSN/src/testbench/mips_tb.vhd $DSN/src/testbench/mux_tb.vhd $DSN/src/testbench/alu_tb.vhd $DSN/src/testbench/datamemory_tb.vhd
+acom $DSN/src/mips.vhd $DSN/src/mux.vhd $DSN/src/sign_extender.vhd $DSN/src/alu.vhd $DSN/src/registerfile.vhd $DSN/src/instructionmemory.vhd $DSN/src/testbench/signe_tb.vhd $DSN/src/testbench/mips_tb.vhd $DSN/src/testbench/mux_tb.vhd $DSN/src/testbench/alu_tb.vhd $DSN/src/testbench/registerfile_tb.vhd
 # Compile...
 # File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\MIPs.vhd
 # Compile Entity "MIPs"
@@ -28,10 +24,6 @@ acom $DSN/src/mips.vhd $DSN/src/mux.vhd $DSN/src/sign_extender.vhd $DSN/src/alu.
 # Compile Entity "InstructionMemory"
 # Entity `InstructionMemory' has been skipped - no difference detected.
 # Compile Architecture "Behavioral" of Entity "InstructionMemory"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\DataMemory.vhd
-# Compile Entity "DataMemory"
-# Entity `DataMemory' has been skipped - no difference detected.
-# Compile Architecture "DataMemory" of Entity "DataMemory"
 # File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\SignE_TB.vhd
 # Compile Entity "SignE_TB"
 # Entity `SignE_TB' has been skipped - no difference detected.
@@ -49,246 +41,13 @@ acom $DSN/src/mips.vhd $DSN/src/mux.vhd $DSN/src/sign_extender.vhd $DSN/src/alu.
 # Entity `alu_tb' has been skipped - no difference detected.
 # Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
 # Compile Configuration "TESTBENCH_FOR_alu"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\datamemory_TB.vhd
-# Compile Entity "datamemory_tb"
-# Entity `datamemory_tb' has been skipped - no difference detected.
-# Compile Architecture "TB_ARCHITECTURE" of Entity "datamemory_tb"
-# Compile Configuration "TESTBENCH_FOR_datamemory"
-# Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]
-acom $DSN/src/mips.vhd $DSN/src/mux.vhd $DSN/src/sign_extender.vhd $DSN/src/alu.vhd $DSN/src/registerfile.vhd $DSN/src/instructionmemory.vhd $DSN/src/datamemory.vhd $DSN/src/testbench/signe_tb.vhd $DSN/src/testbench/mips_tb.vhd $DSN/src/testbench/mux_tb.vhd $DSN/src/testbench/alu_tb.vhd $DSN/src/testbench/datamemory_tb.vhd
-# Compile...
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\MIPs.vhd
-# Compile Entity "MIPs"
-# Entity `MIPs' has been skipped - no difference detected.
-# Compile Architecture "MIPs" of Entity "MIPs"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\MUX.vhd
-# Compile Entity "MUX"
-# Entity `MUX' has been skipped - no difference detected.
-# Compile Architecture "Behave" of Entity "MUX"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\Sign_extender.vhd
-# Compile Entity "Sign_extender"
-# Entity `Sign_extender' has been skipped - no difference detected.
-# Compile Architecture "Behave" of Entity "Sign_extender"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\ALU.vhd
-# Compile Entity "ALU"
-# Entity `ALU' has been skipped - no difference detected.
-# Compile Architecture "Behavioral" of Entity "ALU"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\RegisterFile.vhd
-# Compile Entity "RegisterFile"
-# Entity `RegisterFile' has been skipped - no difference detected.
-# Compile Architecture "Behavioral" of Entity "RegisterFile"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\InstructionMemory.vhd
-# Compile Entity "InstructionMemory"
-# Entity `InstructionMemory' has been skipped - no difference detected.
-# Compile Architecture "Behavioral" of Entity "InstructionMemory"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\DataMemory.vhd
-# Compile Entity "DataMemory"
-# Entity `DataMemory' has been skipped - no difference detected.
-# Compile Architecture "DataMemory" of Entity "DataMemory"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\SignE_TB.vhd
-# Compile Entity "SignE_TB"
-# Entity `SignE_TB' has been skipped - no difference detected.
-# Compile Architecture "TB" of Entity "SignE_TB"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\MIPS_TB.vhd
-# Compile Entity "MIPS_TB"
-# Entity `MIPS_TB' has been skipped - no difference detected.
-# Compile Architecture "TB" of Entity "MIPS_TB"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\MUX_TB.vhd
-# Compile Entity "MUX_TB"
-# Entity `MUX_TB' has been skipped - no difference detected.
-# Compile Architecture "tb" of Entity "MUX_TB"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\alu_TB.vhd
-# Compile Entity "alu_tb"
-# Entity `alu_tb' has been skipped - no difference detected.
-# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
-# Compile Configuration "TESTBENCH_FOR_alu"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\datamemory_TB.vhd
-# Compile Entity "datamemory_tb"
-# Entity `datamemory_tb' has been skipped - no difference detected.
-# Compile Architecture "TB_ARCHITECTURE" of Entity "datamemory_tb"
-# Compile Configuration "TESTBENCH_FOR_datamemory"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.8 [s]
-acom $DSN/src/mips.vhd $DSN/src/mux.vhd $DSN/src/sign_extender.vhd $DSN/src/alu.vhd $DSN/src/registerfile.vhd $DSN/src/instructionmemory.vhd $DSN/src/datamemory.vhd $DSN/src/testbench/signe_tb.vhd $DSN/src/testbench/mips_tb.vhd $DSN/src/testbench/mux_tb.vhd $DSN/src/testbench/alu_tb.vhd $DSN/src/testbench/datamemory_tb.vhd
-# Compile...
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\MIPs.vhd
-# Compile Entity "MIPs"
-# Entity `MIPs' has been skipped - no difference detected.
-# Compile Architecture "MIPs" of Entity "MIPs"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\MUX.vhd
-# Compile Entity "MUX"
-# Entity `MUX' has been skipped - no difference detected.
-# Compile Architecture "Behave" of Entity "MUX"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\Sign_extender.vhd
-# Compile Entity "Sign_extender"
-# Entity `Sign_extender' has been skipped - no difference detected.
-# Compile Architecture "Behave" of Entity "Sign_extender"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\ALU.vhd
-# Compile Entity "ALU"
-# Entity `ALU' has been skipped - no difference detected.
-# Compile Architecture "Behavioral" of Entity "ALU"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\RegisterFile.vhd
-# Compile Entity "RegisterFile"
-# Entity `RegisterFile' has been skipped - no difference detected.
-# Compile Architecture "Behavioral" of Entity "RegisterFile"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\InstructionMemory.vhd
-# Compile Entity "InstructionMemory"
-# Entity `InstructionMemory' has been skipped - no difference detected.
-# Compile Architecture "Behavioral" of Entity "InstructionMemory"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\DataMemory.vhd
-# Compile Entity "DataMemory"
-# Entity `DataMemory' has been skipped - no difference detected.
-# Compile Architecture "DataMemory" of Entity "DataMemory"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\SignE_TB.vhd
-# Compile Entity "SignE_TB"
-# Entity `SignE_TB' has been skipped - no difference detected.
-# Compile Architecture "TB" of Entity "SignE_TB"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\MIPS_TB.vhd
-# Compile Entity "MIPS_TB"
-# Entity `MIPS_TB' has been skipped - no difference detected.
-# Compile Architecture "TB" of Entity "MIPS_TB"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\MUX_TB.vhd
-# Compile Entity "MUX_TB"
-# Entity `MUX_TB' has been skipped - no difference detected.
-# Compile Architecture "tb" of Entity "MUX_TB"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\alu_TB.vhd
-# Compile Entity "alu_tb"
-# Entity `alu_tb' has been skipped - no difference detected.
-# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
-# Compile Configuration "TESTBENCH_FOR_alu"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\datamemory_TB.vhd
-# Compile Entity "datamemory_tb"
-# Entity `datamemory_tb' has been skipped - no difference detected.
-# Compile Architecture "TB_ARCHITECTURE" of Entity "datamemory_tb"
-# Compile Configuration "TESTBENCH_FOR_datamemory"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.8 [s]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim datamemory datamemory
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# asim: Stack memory: 32MB
-# asim: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 2486 kB (elbread=1070 elab2=360 kernel=1056 sdf=0)
-# 1:30 AM, Thursday, May 9, 2024
-# Simulation has been initialized
-# Selected Top-Level: datamemory (datamemory)
-# Signal UUT/MemRead not found in design
-# Signal UUT/MemWrite not found in design
-# Signal UUT/ReadData not found in design
-# Signal UUT/WriteData not found in design
-# Signal UUT/Address not found in design
-# Signal UUT/DM not found in design
-run 100 ns
-# KERNEL: stopped at time: 100 ns
-# KERNEL: Simulation has finished. There are no more test vectors to simulate.
-endsim
-# All when statements cleared.
-# Simulation has been stopped
-asim datamemory datamemory
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# asim: Stack memory: 32MB
-# asim: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 2486 kB (elbread=1070 elab2=360 kernel=1056 sdf=0)
-# 1:32 AM, Thursday, May 9, 2024
-# Simulation has been initialized
-# Selected Top-Level: datamemory (datamemory)
-run @100ns
-# KERNEL: stopped at time: 100 ns
-# KERNEL: Simulation has finished. There are no more test vectors to simulate.
-acom $DSN/src/mips.vhd $DSN/src/mux.vhd $DSN/src/sign_extender.vhd $DSN/src/alu.vhd $DSN/src/registerfile.vhd $DSN/src/instructionmemory.vhd $DSN/src/datamemory.vhd $DSN/src/testbench/signe_tb.vhd $DSN/src/testbench/mips_tb.vhd $DSN/src/testbench/mux_tb.vhd $DSN/src/testbench/alu_tb.vhd $DSN/src/testbench/datamemory_tb.vhd
-# Compile...
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\MIPs.vhd
-# Compile Entity "MIPs"
-# Entity `MIPs' has been skipped - no difference detected.
-# Compile Architecture "MIPs" of Entity "MIPs"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\MUX.vhd
-# Compile Entity "MUX"
-# Entity `MUX' has been skipped - no difference detected.
-# Compile Architecture "Behave" of Entity "MUX"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\Sign_extender.vhd
-# Compile Entity "Sign_extender"
-# Entity `Sign_extender' has been skipped - no difference detected.
-# Compile Architecture "Behave" of Entity "Sign_extender"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\ALU.vhd
-# Compile Entity "ALU"
-# Entity `ALU' has been skipped - no difference detected.
-# Compile Architecture "Behavioral" of Entity "ALU"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\RegisterFile.vhd
-# Compile Entity "RegisterFile"
-# Entity `RegisterFile' has been skipped - no difference detected.
-# Compile Architecture "Behavioral" of Entity "RegisterFile"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\InstructionMemory.vhd
-# Compile Entity "InstructionMemory"
-# Entity `InstructionMemory' has been skipped - no difference detected.
-# Compile Architecture "Behavioral" of Entity "InstructionMemory"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\DataMemory.vhd
-# Compile Entity "DataMemory"
-# Entity `DataMemory' has been skipped - no difference detected.
-# Compile Architecture "DataMemory" of Entity "DataMemory"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\SignE_TB.vhd
-# Compile Entity "SignE_TB"
-# Entity `SignE_TB' has been skipped - no difference detected.
-# Compile Architecture "TB" of Entity "SignE_TB"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\MIPS_TB.vhd
-# Compile Entity "MIPS_TB"
-# Entity `MIPS_TB' has been skipped - no difference detected.
-# Compile Architecture "TB" of Entity "MIPS_TB"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\MUX_TB.vhd
-# Compile Entity "MUX_TB"
-# Entity `MUX_TB' has been skipped - no difference detected.
-# Compile Architecture "tb" of Entity "MUX_TB"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\alu_TB.vhd
-# Compile Entity "alu_tb"
-# Entity `alu_tb' has been skipped - no difference detected.
-# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
-# Compile Configuration "TESTBENCH_FOR_alu"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\datamemory_TB.vhd
-# Compile Entity "datamemory_tb"
-# Entity `datamemory_tb' has been skipped - no difference detected.
-# Compile Architecture "TB_ARCHITECTURE" of Entity "datamemory_tb"
-# Compile Configuration "TESTBENCH_FOR_datamemory"
+# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\registerfile_TB.vhd
+# Compile Entity "RegisterFile_TB"
+# Entity `RegisterFile_TB' has been skipped - no difference detected.
+# Compile Architecture "TB_ARCHITECTURE" of Entity "RegisterFile_TB"
+# Compile Configuration "TESTBENCH_FOR_registerfile"
 # Compile success 0 Errors 0 Warnings  Analysis time :  0.9 [s]
-endsim
-# All when statements cleared.
-# Simulation has been stopped
-asim datamemory datamemory
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# asim: Stack memory: 32MB
-# asim: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 2486 kB (elbread=1070 elab2=360 kernel=1056 sdf=0)
-# 1:33 AM, Thursday, May 9, 2024
-# Simulation has been initialized
-# Selected Top-Level: datamemory (datamemory)
-# Simulation has been stopped
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-acom $DSN/src/mips.vhd $DSN/src/mux.vhd $DSN/src/sign_extender.vhd $DSN/src/alu.vhd $DSN/src/registerfile.vhd $DSN/src/instructionmemory.vhd $DSN/src/datamemory.vhd $DSN/src/testbench/signe_tb.vhd $DSN/src/testbench/mips_tb.vhd $DSN/src/testbench/mux_tb.vhd $DSN/src/testbench/alu_tb.vhd $DSN/src/testbench/datamemory_tb.vhd
+acom $DSN/src/mips.vhd $DSN/src/mux.vhd $DSN/src/sign_extender.vhd $DSN/src/alu.vhd $DSN/src/registerfile.vhd $DSN/src/instructionmemory.vhd $DSN/src/testbench/signe_tb.vhd $DSN/src/testbench/mips_tb.vhd $DSN/src/testbench/mux_tb.vhd $DSN/src/testbench/alu_tb.vhd $DSN/src/testbench/registerfile_tb.vhd
 # Compile...
 # File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\MIPs.vhd
 # Compile Entity "MIPs"
@@ -314,10 +73,6 @@ acom $DSN/src/mips.vhd $DSN/src/mux.vhd $DSN/src/sign_extender.vhd $DSN/src/alu.
 # Compile Entity "InstructionMemory"
 # Entity `InstructionMemory' has been skipped - no difference detected.
 # Compile Architecture "Behavioral" of Entity "InstructionMemory"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\DataMemory.vhd
-# Compile Entity "DataMemory"
-# Entity `DataMemory' has been skipped - no difference detected.
-# Compile Architecture "DataMemory" of Entity "DataMemory"
 # File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\SignE_TB.vhd
 # Compile Entity "SignE_TB"
 # Entity `SignE_TB' has been skipped - no difference detected.
@@ -335,29 +90,9 @@ acom $DSN/src/mips.vhd $DSN/src/mux.vhd $DSN/src/sign_extender.vhd $DSN/src/alu.
 # Entity `alu_tb' has been skipped - no difference detected.
 # Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
 # Compile Configuration "TESTBENCH_FOR_alu"
-# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\datamemory_TB.vhd
-# Compile Entity "datamemory_tb"
-# Entity `datamemory_tb' has been skipped - no difference detected.
-# Compile Architecture "TB_ARCHITECTURE" of Entity "datamemory_tb"
-# Compile Configuration "TESTBENCH_FOR_datamemory"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.8 [s]
-asim testbench_for_datamemory
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# asim: Stack memory: 32MB
-# asim: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 2490 kB (elbread=1070 elab2=363 kernel=1057 sdf=0)
-# 1:35 AM, Thursday, May 9, 2024
-# Simulation has been initialized
-# Selected Top-Level: testbench_for_datamemory
-run 100 ns
-# KERNEL: stopped at time: 100 ns
-# Simulation has been stopped
+# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\registerfile_TB.vhd
+# Compile Entity "RegisterFile_TB"
+# Entity `RegisterFile_TB' has been skipped - no difference detected.
+# Compile Architecture "TB_ARCHITECTURE" of Entity "RegisterFile_TB"
+# Compile Configuration "TESTBENCH_FOR_registerfile"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]

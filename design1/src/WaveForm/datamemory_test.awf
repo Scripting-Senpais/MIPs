@@ -2,40 +2,40 @@ $WAVE4
 $RESOLUTION 1000
 $ENDTIME 100000
 I 1 "e#9#std_logicc9 UX01ZWLH-"
-$IN 1261 1 "UUT/MemRead"
-$IN +1 1 7 0 Write
+$IN 1 1 "UUT/MemRead"
+$IN 2 1 7 0 Write
 I 2 "a#29#std_logic_vector(31 downto 0)1 ricd31 0 e#9#std_logicc9 UX01ZWLH-"
-$BUS IN +1 2 32 "UUT/Address"
-$SC +1-+31
+$BUS IN 3 2 32 "UUT/Address"
+$SC 4-35
 $BUS IN +1 2 32 "UUT/WriteData"
-$SC +1-+31
+$SC +1-68
 $BUS OUT +1 2 32 4 4 Read
 $SC +1-+31
 I 3 "a#11#RAM_16_x_321 rict0 15 a#29#std_logic_vector(31 downto 0)1 ricd31 0 e#9#std_logicc9 UX01ZWLH-"
 $BUS S +1 3 16 "UUT/DM"
-$CHILD +1 0 1362
-$CHILD +1 0 1362
-$CHILD +2 1 1362
-$CHILD +2 1 1362
-$CHILD +3 2 1362
-$CHILD +3 2 1362
-$CHILD +4 3 1362
-$CHILD +5 4 1362
-$CHILD +6 5 1362
-$CHILD +7 6 1362
-$CHILD +8 7 1362
-$CHILD +9 8 1362
-$CHILD +10 9 1362
-$CHILD +11 10 1362
-$CHILD +12 11 1362
-$CHILD +13 12 1362
-$CHILD +14 13 1362
-$CHILD +15 14 1362
-$CHILD +16 15 1362
-$SC +17-+511
-P 0 1261-+629 CS "0"
-P 0 1263-+66/33 +34-+2 Radix "10"
-$WAVES 1261
+$CHILD +1 0 102
+$CHILD +1 0 102
+$CHILD +34 1 102
+$CHILD +34 1 102
+$CHILD +67 2 102
+$CHILD +67 2 102
+$CHILD 202 3 +99
+$CHILD 235 4 +98
+$CHILD 268 5 +97
+$CHILD 301 6 +96
+$CHILD 334 7 +95
+$CHILD 367 8 +94
+$CHILD 400 9 +93
+$CHILD 433 10 +92
+$CHILD 466 11 +91
+$CHILD 499 12 +90
+$CHILD 532 13 +89
+$CHILD 565 14 +88
+$CHILD 598 15 +87
+$SC +2-+31 +2-+31 +2-+31 +2-+31 +2-+31 +2-+31 +2-+31 +2-+31 +2-+31 +2-+31 +2-+31 +2-+31 +2-+31 +2-+31 +2-+31 +2-+31
+P 0 1-630 CS "1"
+P 0 3-69/33 +34-+66/33 Radix "10"
+$WAVES 1
 =0 T 0
 =1 D 0 1
 R 2 16 =2 D 1k 1 =3 D 5k 1
@@ -45,7 +45,7 @@ V 1
 U
 R 2 17 1 0
 $END
-$WAVES +1
+$WAVES 2
 *0
 =4 D 2k 1
 R 1 3 *2
@@ -59,7 +59,7 @@ R 2 33 1 0
 V 1
 1
 $END
-$WAVES +2-+25 +3
+$WAVES 4-29 +3
 *0
 *1
 $VALUES
@@ -67,7 +67,7 @@ V 2
 U
 0
 $END
-$WAVES +-2 +1
+$WAVES 30 +1
 *0
 *1
 $VALUES
@@ -107,7 +107,7 @@ R 2 17 0 1
 V 1
 0
 $END
-$WAVES +2-+24 +2 +2-+2
+$WAVES +2-61 +2 +2-+2
 *0
 R 1 2 *4
 R 2 16 *6 *4
@@ -116,7 +116,7 @@ V 1
 U
 R 2 17 0 1
 $END
-$WAVES +-5 +2 +4
+$WAVES 62 +2 +4
 *0
 *4
 $VALUES
@@ -124,7 +124,7 @@ V 2
 U
 1
 $END
-$WAVES +2-+28 +3
+$WAVES +2-98 +3
 *0
 =7 D 0 2
 $VALUES
@@ -132,7 +132,7 @@ V 2
 U
 0
 $END
-$WAVES +-2 +1
+$WAVES 99 +1
 *0
 *7
 $VALUES
@@ -140,19 +140,19 @@ V 2
 U
 1
 $END
-$WAVES +19-+28 +3-+25 +2 +2-+2 +34-+415
+$WAVES +4-+28 +3 +2-+24 +2 +2-+2 +36-+31 +2-+31 +2-+31 +2-+31 +2-+31 +2-+31 +2-+31 +2-+31 +2-+31 +2-+31 +2-+31 +2-+31 +2-+31
 *0
 $VALUES
 V 1
 0
 $END
-$WAVES 1408 +1
+$WAVES 133 +1
 *0
 $VALUES
 V 1
 1
 $END
-$WAVES +27 +2 +4
+$WAVES +28 +2 +4
 *0
 =8 D 2k 2
 $VALUES
@@ -160,7 +160,7 @@ V 2
 0
 1
 $END
-$WAVES +1-+31
+$WAVES +2-+31
 *0
 =9 D 4k 2
 $VALUES
