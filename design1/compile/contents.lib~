@@ -1,4 +1,4 @@
-395
+401
 ~E 1 "./src/RegisterFile.vhd" 5 registerfile
 ~A 1 "./src/RegisterFile.vhd" 17 behavioral
 ~E 1 "./src/MIPs.vhd" 4 mips
