@@ -2367,3 +2367,83 @@ V 000051 55 5464          1715128037974 Behavioral
   (_model . Behavioral 1 -1
   )
 )
+V 000056 55 3073          1715128359369 TB_ARCHITECTURE
+(_unit VHDL (alu_tb 0 7 (tb_architecture 0 10 ))
+  (_version v33)
+  (_time 1715128359368 2024.05.08 03:32:39)
+  (_source (\./src/TestBench/alu_TB.vhd\))
+  (_use (std(standard))(ieee(std_logic_1164))(ieee(numeric_std)))
+  (_parameters dbg )
+  (_entity
+    (_time 1715128299659)
+    (_use )
+  )
+  (_component
+    (alu
+      (_object
+        (_port (_internal A1 ~std_logic_vector{31~downto~0}~13 0 14 (_entity (_in ))))
+        (_port (_internal A2 ~std_logic_vector{31~downto~0}~132 0 15 (_entity (_in ))))
+        (_port (_internal ALU_CONTROL ~std_logic_vector{2~downto~0}~13 0 16 (_entity (_in ))))
+        (_port (_internal ALU_RESULT ~std_logic_vector{31~downto~0}~134 0 17 (_entity (_out ))))
+        (_port (_internal ZERO ~extieee.std_logic_1164.std_logic 0 18 (_entity (_out ))))
+      )
+    )
+  )
+  (_instantiation UUT 0 34 (_component alu )
+    (_port
+      ((A1)(A1))
+      ((A2)(A2))
+      ((ALU_CONTROL)(ALU_CONTROL))
+      ((ALU_RESULT)(ALU_RESULT))
+      ((ZERO)(ZERO))
+    )
+    (_use (_entity . alu)
+    )
+  )
+  (_object
+    (_type (_internal ~std_logic_vector{31~downto~0}~13 0 14 (_array ~extieee.std_logic_1164.std_logic ((_downto (i 31)(i 0))))))
+    (_type (_internal ~std_logic_vector{31~downto~0}~132 0 15 (_array ~extieee.std_logic_1164.std_logic ((_downto (i 31)(i 0))))))
+    (_type (_internal ~std_logic_vector{2~downto~0}~13 0 16 (_array ~extieee.std_logic_1164.std_logic ((_downto (i 2)(i 0))))))
+    (_type (_internal ~std_logic_vector{31~downto~0}~134 0 17 (_array ~extieee.std_logic_1164.std_logic ((_downto (i 31)(i 0))))))
+    (_type (_internal ~std_logic_vector{31~downto~0}~136 0 22 (_array ~extieee.std_logic_1164.std_logic ((_downto (i 31)(i 0))))))
+    (_signal (_internal A1 ~std_logic_vector{31~downto~0}~136 0 22 (_architecture (_uni ))))
+    (_signal (_internal A2 ~std_logic_vector{31~downto~0}~136 0 23 (_architecture (_uni ))))
+    (_type (_internal ~std_logic_vector{2~downto~0}~138 0 24 (_array ~extieee.std_logic_1164.std_logic ((_downto (i 2)(i 0))))))
+    (_signal (_internal ALU_CONTROL ~std_logic_vector{2~downto~0}~138 0 24 (_architecture (_uni ))))
+    (_signal (_internal ALU_RESULT ~std_logic_vector{31~downto~0}~136 0 26 (_architecture (_uni ))))
+    (_signal (_internal ZERO ~extieee.std_logic_1164.std_logic 0 27 (_architecture (_uni ))))
+    (_process
+      (STIM(_architecture 0 0 44 (_process (_wait_for)(_target(0)(1)(2)))))
+    )
+    (_subprogram
+      (_external resolved (ieee std_logic_1164 0))
+    )
+    (_type (_external ~extieee.std_logic_1164.std_logic (ieee std_logic_1164 std_logic)))
+    (_type (_external ~extieee.std_logic_1164.std_ulogic (ieee std_logic_1164 std_ulogic)))
+    (_type (_external ~extieee.std_logic_1164.std_logic_vector (ieee std_logic_1164 std_logic_vector)))
+  )
+  (_static
+    (2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 )
+    (3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 )
+    (2 2 3 )
+    (2 3 3 )
+    (3 3 3 )
+    (2 3 2 )
+  )
+  (_model . TB_ARCHITECTURE 1 -1
+  )
+)
+V 000036 55 368 0 testbench_for_alu
+(_configuration VHDL (testbench_for_alu 0 62 (alu_tb))
+  (_version v33)
+  (_time 1715128359415 2024.05.08 03:32:39)
+  (_source (\./src/TestBench/alu_TB.vhd\))
+  (_use (std(standard))(ieee(std_logic_1164))(ieee(numeric_std)))
+  (_parameters dbg )
+  (_architecture TB_ARCHITECTURE
+    (_instantiation UUT
+      (_entity . alu behavioral
+      )
+    )
+  )
+)

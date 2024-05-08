@@ -43,6 +43,9 @@ TOPLEVEL=mips_tb
 WAVEFORMS=
 DEFWAVE=0
 
+[Groups]
+TestBench=1
+
 [Files]
 /MIPs.vhd=-1
 /MUX.vhd=-1
@@ -54,6 +57,8 @@ DEFWAVE=0
 /ALU.vhd=-1
 /RegisterFile.vhd=-1
 /InstructionMemory.vhd=-1
+TestBench/alu_TB.vhd=-1
+TestBench/alu_TB_runtest.do=-1
 
 [Files.Data]
 .\src\MIPs.vhd=VHDL Source Code
@@ -66,4 +71,6 @@ DEFWAVE=0
 .\src\ALU.vhd=VHDL Source Code
 .\src\RegisterFile.vhd=VHDL Source Code
 .\src\InstructionMemory.vhd=VHDL Source Code
+.\src\TestBench\alu_TB.vhd=VHDL Test Bench
+.\src\TestBench\alu_TB_runtest.do=Macro
 

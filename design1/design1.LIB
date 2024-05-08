@@ -1,4 +1,4 @@
-timestamp=1715128038017
+timestamp=1715128359417
 
 [alu]
 A/behavioral=A/Behavioral 21|./src/ALU.vhd|15|1*98997
@@ -6,6 +6,13 @@ B/behavioral=3*37616
 H/behavioral=0*124723
 R=./src/ALU.vhd|5
 V=0*108685
+
+[alu_tb]
+A/tb_architecture=A/TB_ARCHITECTURE 21|./src/TestBench/alu_TB.vhd|10|1*117261
+B/tb_architecture=3*42665
+H/tb_architecture=0*139655
+R=./src/TestBench/alu_TB.vhd|7
+V=0*139569
 
 [instructionmemory]
 A/behavioral=A/Behavioral 21|./src/InstructionMemory.vhd|12|1*111746
@@ -62,6 +69,10 @@ H/tb=0*120320
 R=./src/SignE_TB.vhd|4
 V=0*15316
 
+[testbench_for_alu]
+E=1*120390
+R=./src/TestBench/alu_TB.vhd|62
+
 [~A]
 ./src/ALU.vhd~ALU=0*106007*106378
 ./src/ALU.vhd~BehavioralALU=0*125380*125968
@@ -81,16 +92,20 @@ V=0*15316
 ./src/SignE_TB.vhd~TBSignE_TB=0*122820*123416
 ./src/Sign_extender.vhd~BehaveSign_extender=0*119989*120237
 ./src/Sign_extender.vhd~Sign_extender=0*9251*9520
-ModifyID=281
+./src/TestBench/alu_TB.vhd~TB_ARCHITECTUREalu_tb=0*143622*144584
+./src/TestBench/alu_TB.vhd~TESTBENCH_FOR_alualu_tb=0*144672*144909
+./src/TestBench/alu_TB.vhd~alu_tb=0*139071*139248
+ModifyID=291
 Version=73
 
 [~MFT]
-0=317|0design1.mgf|137991|99331
-1=83|1design1.mgf|111746|73242
-3=63|3design1.mgf|41996|32016
+0=327|0design1.mgf|144909|99331
+1=85|1design1.mgf|120390|73242
+3=64|3design1.mgf|42665|32016
 
 [~U]
 alu=ALU 11|0*107747|0*107996
+alu_tb=11|0*139321|0*139380
 instructionmemory=InstructionMemory 11|0*137328|0*137535
 mips=MIPs 11|0*494|0*620
 mips_tb=MIPS_TB 11|0*34028|0*34090
@@ -99,4 +114,5 @@ mux_tb=MUX_TB 11|0*8946|0*9005
 registerfile=RegisterFile 11|0*130002|0*130381
 sign_extender=Sign_extender 11|0*10015|0*10205
 signe_tb=SignE_TB 11|0*15077|0*15142
+testbench_for_alu=TESTBENCH_FOR_alu 2||
 

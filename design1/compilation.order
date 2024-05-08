@@ -7,3 +7,4 @@
 .\src\ALU.vhd
 .\src\RegisterFile.vhd
 .\src\InstructionMemory.vhd
+.\src\TestBench\alu_TB.vhd
