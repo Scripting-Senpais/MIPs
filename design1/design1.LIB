@@ -1,75 +1,84 @@
-timestamp=1715127680270
+timestamp=1715127960259
 
 [alu]
-A/behavioral=A/Behavioral 21|./src/ALU.vhd|15|1*83940
-B/behavioral=3*29190
-H/behavioral=0*106435
+A/behavioral=A/Behavioral 21|./src/ALU.vhd|15|1*98997
+B/behavioral=3*37616
+H/behavioral=0*124723
 R=./src/ALU.vhd|5
 V=0*108685
 
 [mips]
-A/mips=A/MIPs 21|./src/MIPs.vhd|12|1*71423
-H/mips=0*92091
+A/mips=A/MIPs 21|./src/MIPs.vhd|12|1*86517
+H/mips=0*110807
 R=./src/MIPs.vhd|4
 V=0*827
 
 [mips_tb]
-A/tb=A/TB 21|./src/MIPS_TB.vhd|8|1*82312
-B/tb=3*27720
-H/tb=0*104769
+A/tb=A/TB 21|./src/MIPS_TB.vhd|8|1*97406
+B/tb=3*36146
+H/tb=0*123485
 R=./src/MIPS_TB.vhd|4
 V=0*34262
 
 [mux]
-A/behave=A/Behave 21|./src/MUX.vhd|16|1*75014
-B/behave=3*23590
-H/behave=0*97838
+A/behave=A/Behave 21|./src/MUX.vhd|16|1*90108
+B/behave=3*32016
+H/behave=0*116554
 R=./src/MUX.vhd|4
 V=0*3463
 
 [mux_tb]
-A/tb=21|./src/MUX_TB.vhd|7|1*76780
-B/tb=3*24555
-H/tb=0*98145
+A/tb=21|./src/MUX_TB.vhd|7|1*91874
+B/tb=3*32981
+H/tb=0*116861
 R=./src/MUX_TB.vhd|4
 V=0*9175
 
+[registerfile]
+A/behavioral=A/Behavioral 21|./src/RegisterFile.vhd|17|1*101574
+B/behavioral=3*40442
+H/behavioral=0*126642
+R=./src/RegisterFile.vhd|5
+V=0*131373
+
 [sign_extender]
-A/behave=A/Behave 21|./src/Sign_extender.vhd|11|1*78763
-B/behave=3*25841
-H/behave=0*101186
+A/behave=A/Behave 21|./src/Sign_extender.vhd|11|1*93857
+B/behave=3*34267
+H/behave=0*119902
 R=./src/Sign_extender.vhd|4
 V=0*10627
 
 [signe_tb]
-A/tb=A/TB 21|./src/SignE_TB.vhd|8|1*80157
-B/tb=3*26626
-H/tb=0*101604
+A/tb=A/TB 21|./src/SignE_TB.vhd|8|1*95251
+B/tb=3*35052
+H/tb=0*120320
 R=./src/SignE_TB.vhd|4
 V=0*15316
 
 [~A]
 ./src/ALU.vhd~ALU=0*106007*106378
-./src/ALU.vhd~BehavioralALU=0*107092*107680
+./src/ALU.vhd~BehavioralALU=0*125380*125968
 ./src/MIPS_TB.vhd~MIPS_TB=0*33821*33963
-./src/MIPS_TB.vhd~TBMIPS_TB=0*105436*105940
+./src/MIPS_TB.vhd~TBMIPS_TB=0*124152*124656
 ./src/MIPs.vhd~MIPs=0*0*186
-./src/MIPs.vhd~MIPsMIPs=0*96883*97775
-./src/MUX.vhd~BehaveMUX=0*97925*98082
+./src/MIPs.vhd~MIPsMIPs=0*115599*116491
+./src/MUX.vhd~BehaveMUX=0*116641*116798
 ./src/MUX.vhd~MUX=0*1829*2172
 ./src/MUX_TB.vhd~MUX_TB=0*5704*5842
-./src/MUX_TB.vhd~tbMUX_TB=0*100406*101121
+./src/MUX_TB.vhd~tbMUX_TB=0*119122*119837
+./src/RegisterFile.vhd~BehavioralRegisterFile=0*128786*129917
+./src/RegisterFile.vhd~RegisterFile=0*126035*126567
 ./src/SignE_TB.vhd~SignE_TB=0*11699*11845
-./src/SignE_TB.vhd~TBSignE_TB=0*104104*104700
-./src/Sign_extender.vhd~BehaveSign_extender=0*101273*101521
+./src/SignE_TB.vhd~TBSignE_TB=0*122820*123416
+./src/Sign_extender.vhd~BehaveSign_extender=0*119989*120237
 ./src/Sign_extender.vhd~Sign_extender=0*9251*9520
-ModifyID=238
+ModifyID=274
 Version=73
 
 [~MFT]
-0=259|0design1.mgf|108685|84103
-1=73|1design1.mgf|83940|70665
-3=49|3design1.mgf|29190|23590
+0=309|0design1.mgf|131373|99331
+1=82|1design1.mgf|101574|73242
+3=62|3design1.mgf|40442|32016
 
 [~U]
 alu=ALU 11|0*107747|0*107996
@@ -77,6 +86,7 @@ mips=MIPs 11|0*494|0*620
 mips_tb=MIPS_TB 11|0*34028|0*34090
 mux=MUX 11|0*2536|0*2790
 mux_tb=MUX_TB 11|0*8946|0*9005
+registerfile=RegisterFile 11|0*130002|0*130381
 sign_extender=Sign_extender 11|0*10015|0*10205
 signe_tb=SignE_TB 11|0*15077|0*15142
 

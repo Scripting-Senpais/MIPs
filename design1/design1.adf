@@ -52,6 +52,7 @@ DEFWAVE=0
 /MIPS_TB.vhd=-1
 /MIPS_test1.awf=-1
 /ALU.vhd=-1
+/RegisterFile.vhd=-1
 
 [Files.Data]
 .\src\MIPs.vhd=VHDL Source Code
@@ -62,4 +63,5 @@ DEFWAVE=0
 .\src\MIPS_TB.vhd=VHDL Source Code
 .\src\MIPS_test1.awf=Waveform File
 .\src\ALU.vhd=VHDL Source Code
+.\src\RegisterFile.vhd=VHDL Source Code
 

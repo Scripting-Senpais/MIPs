@@ -5,3 +5,4 @@ i<>.\src\Sign_extender.vhd
 i<>.\src\SignE_TB.vhd
 i<>.\src\MIPS_TB.vhd
 i<>.\src\ALU.vhd
+i<>.\src\RegisterFile.vhd
