@@ -14,13 +14,13 @@ ARCHITECTURE Behavioral OF InstructionMemory IS
 	TYPE RAM_16_X_32 IS ARRAY(0 TO 15) OF
 	STD_LOGIC_VECTOR(31 DOWNTO 0);
 	
-	-- r-type : funct: add -> 001100               |    s1 => source 1
-	--				   sub -> 110011			   |	s2 => source 2
+	-- r-type : funct: add -> 001100               	   |    s1 => source 1
+	--				   sub -> 110011			   	   |	s2 => source 2
 												   
-	-- i-type : opcode: load  -> 101010			   |	d => dist
-	--				   store -> 010101			   |	shamt =>
+	-- i-type : opcode: load(lw)  -> 101010			   |	d => dist
+	--				   store(sw)  -> 010101			   |	shamt =>
 	
-	-- j-type : opcode: jamp -> 100001			   |	funct =>
+	-- j-type : opcode: jamp(j) -> 100001			   |	funct => function code
 												   
 	-- opcode: branch-eq   -> 100000			   |
 	--		   branch-n-eq -> 100000			   |
@@ -32,6 +32,8 @@ ARCHITECTURE Behavioral OF InstructionMemory IS
 								"00000010011111000111000000001100",		-- 000000 10011 11100 01110 00000 001100 :	-- add	$t6, $s3, $gp
 								"00000011111011011111000000110011",		-- 000000 11111 01101 11110 00000 110011 :	-- sub	$fp, $ra, $t5
 								"00000001100000111101000000110011",		-- 000000 01100 00011 11010 00000 110011 :	-- sub	$k0, $t4, $v1
+								
+								
 								"00000000000000000000000000000000",
 								"00000000000000000000000000000000",
 								"00000000000000000000000000000000",
