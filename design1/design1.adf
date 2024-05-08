@@ -29,7 +29,7 @@ UCF=
 
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=datamemory|datamemory|0 datamemory_tb|testbench_for_datamemory|1 
+HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
 
@@ -54,17 +54,16 @@ waveform=1
 /ALU.vhd=-1
 /RegisterFile.vhd=-1
 /InstructionMemory.vhd=-1
-/DataMemory.vhd=-1
 TestBench/SignE_TB.vhd=-1
 TestBench/MIPS_TB.vhd=-1
 TestBench/MUX_TB.vhd=-1
 TestBench/alu_TB.vhd=-1
 TestBench/alu_TB_runtest.do=-1
-TestBench/datamemory_TB.vhd=-1
-TestBench/datamemory_TB_runtest.do=-1
+TestBench/registerfile_TB.vhd=-1
+TestBench/registerfile_TB_runtest.do=-1
 waveform/MIPS_test1.awf=-1
 waveform/ALU_test.awf=-1
-waveform/datamemory_test.awf=-1
+waveform/RegisterFile_test.awf=-1
 
 [Files.Data]
 .\src\MIPs.vhd=VHDL Source Code
@@ -73,15 +72,14 @@ waveform/datamemory_test.awf=-1
 .\src\ALU.vhd=VHDL Source Code
 .\src\RegisterFile.vhd=VHDL Source Code
 .\src\InstructionMemory.vhd=VHDL Source Code
-.\src\DataMemory.vhd=VHDL Source Code
 .\src\TestBench\SignE_TB.vhd=VHDL Source Code
 .\src\TestBench\MIPS_TB.vhd=VHDL Source Code
 .\src\TestBench\MUX_TB.vhd=VHDL Source Code
 .\src\TestBench\alu_TB.vhd=VHDL Test Bench
 .\src\TestBench\alu_TB_runtest.do=Macro
-.\src\TestBench\datamemory_TB.vhd=VHDL Test Bench
-.\src\TestBench\datamemory_TB_runtest.do=Macro
+.\src\TestBench\registerfile_TB.vhd=VHDL Test Bench
+.\src\TestBench\registerfile_TB_runtest.do=Macro
 .\src\waveform\MIPS_test1.awf=Waveform File
 .\src\waveform\ALU_test.awf=Waveform File
-.\src\waveform\datamemory_test.awf=Waveform File
+.\src\waveform\RegisterFile_test.awf=Waveform File
 

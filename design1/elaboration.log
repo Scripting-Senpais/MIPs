@@ -1,12 +1,12 @@
-elbread.dll ver. 1.0.5.365 Thu May 09 01:35:14 2024
+elbread.dll ver. 1.0.5.365 Thu May 09 00:46:35 2024
 
 
-------------------------------------------
-Entity         | Architecture    | Library
-------------------------------------------
-datamemory_tb  | tb_architecture | design1
-datamemory     | datamemory      | design1
-------------------------------------------
+--------------------------------------------
+Entity           | Architecture    | Library
+--------------------------------------------
+registerfile_tb  | tb_architecture | design1
+registerfile     | behavioral      | design1
+--------------------------------------------
 
 -------------------------
 Package         | Library
@@ -15,9 +15,3 @@ standard        | std
 std_logic_1164  | ieee
 numeric_std     | ieee
 -------------------------
-
------------------------------------
-Configuration             | Library
------------------------------------
-testbench_for_datamemory  | design1
------------------------------------
