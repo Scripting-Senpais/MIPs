@@ -1,16 +1,16 @@
-timestamp=1715132093178
+timestamp=1715186819551
 
 [alu]
-A/behavioral=A/Behavioral 21|./src/ALU.vhd|17|1*120794
-B/behavioral=3*44192
-H/behavioral=0*149149
+A/behavioral=A/Behavioral 21|./src/ALU.vhd|17|1*148066
+B/behavioral=3*54952
+H/behavioral=0*180005
 R=./src/ALU.vhd|6
 V=0*152274
 
 [alu_tb]
-A/tb_architecture=A/TB_ARCHITECTURE 21|./src/TestBench/alu_TB.vhd|11|1*128129
-B/tb_architecture=3*49250
-H/tb_architecture=0*160370
+A/tb_architecture=A/TB_ARCHITECTURE 21|./src/TestBench/alu_TB.vhd|10|1*144261
+B/tb_architecture=3*53425
+H/tb_architecture=0*174358
 R=./src/TestBench/alu_TB.vhd|8
 V=0*165915
 
@@ -63,19 +63,19 @@ R=./src/Sign_extender.vhd|4
 V=0*10627
 
 [signe_tb]
-A/tb=A/TB 21|./src/SignE_TB.vhd|8|1*95251
-B/tb=3*35052
-H/tb=0*120320
+A/tb=A/TB 21|./src/SignE_TB.vhd|8|1*142106
+B/tb=3*52331
+H/tb=0*171160
 R=./src/SignE_TB.vhd|4
 V=0*15316
 
 [testbench_for_alu]
-E=1*131506
-R=./src/TestBench/alu_TB.vhd|66
+E=1*147638
+R=./src/TestBench/alu_TB.vhd|64
 
 [~A]
 ./src/ALU.vhd~ALU=0*148660*149092
-./src/ALU.vhd~BehavioralALU=0*150018*151188
+./src/ALU.vhd~BehavioralALU=0*180874*182044
 ./src/InstructionMemory.vhd~BehavioralInstructionMemory=0*136542*137233
 ./src/InstructionMemory.vhd~InstructionMemory=0*134498*134818
 ./src/MIPS_TB.vhd~MIPS_TB=0*33821*33963
@@ -89,19 +89,19 @@ R=./src/TestBench/alu_TB.vhd|66
 ./src/RegisterFile.vhd~BehavioralRegisterFile=0*169208*171075
 ./src/RegisterFile.vhd~RegisterFile=0*126035*126567
 ./src/SignE_TB.vhd~SignE_TB=0*11699*11845
-./src/SignE_TB.vhd~TBSignE_TB=0*122820*123416
+./src/SignE_TB.vhd~TBSignE_TB=0*173660*174289
 ./src/Sign_extender.vhd~BehaveSign_extender=0*119989*120237
 ./src/Sign_extender.vhd~Sign_extender=0*9251*9520
-./src/TestBench/alu_TB.vhd~TB_ARCHITECTUREalu_tb=0*164511*165555
-./src/TestBench/alu_TB.vhd~TESTBENCH_FOR_alualu_tb=0*166001*166238
+./src/TestBench/alu_TB.vhd~TB_ARCHITECTUREalu_tb=0*178499*179590
+./src/TestBench/alu_TB.vhd~TESTBENCH_FOR_alualu_tb=0*179678*179915
 ./src/TestBench/alu_TB.vhd~alu_tb=0*160087*160297
-ModifyID=349
+ModifyID=373
 Version=73
 
 [~MFT]
-0=389|0design1.mgf|171075|122680
-1=97|1design1.mgf|131934|93281
-3=72|3design1.mgf|50777|37923
+0=411|0design1.mgf|182044|133551
+1=105|1design1.mgf|148066|102819
+3=78|3design1.mgf|54952|45602
 
 [~U]
 alu=11|0*151255|0*151530

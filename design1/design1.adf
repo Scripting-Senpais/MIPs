@@ -45,32 +45,35 @@ DEFWAVE=0
 
 [Groups]
 TestBench=1
+waveform=1
 
 [Files]
 /MIPs.vhd=-1
 /MUX.vhd=-1
-/MUX_TB.vhd=-1
 /Sign_extender.vhd=-1
-/SignE_TB.vhd=-1
-/MIPS_TB.vhd=-1
-/MIPS_test1.awf=-1
 /ALU.vhd=-1
 /RegisterFile.vhd=-1
 /InstructionMemory.vhd=-1
+TestBench/SignE_TB.vhd=-1
+TestBench/MIPS_TB.vhd=-1
+TestBench/MUX_TB.vhd=-1
 TestBench/alu_TB.vhd=-1
 TestBench/alu_TB_runtest.do=-1
+waveform/MIPS_test1.awf=-1
+waveform/ALU_test.awf=-1
 
 [Files.Data]
 .\src\MIPs.vhd=VHDL Source Code
 .\src\MUX.vhd=VHDL Source Code
-.\src\MUX_TB.vhd=VHDL Source Code
 .\src\Sign_extender.vhd=VHDL Source Code
-.\src\SignE_TB.vhd=VHDL Source Code
-.\src\MIPS_TB.vhd=VHDL Source Code
-.\src\MIPS_test1.awf=Waveform File
 .\src\ALU.vhd=VHDL Source Code
 .\src\RegisterFile.vhd=VHDL Source Code
 .\src\InstructionMemory.vhd=VHDL Source Code
+.\src\TestBench\SignE_TB.vhd=VHDL Source Code
+.\src\TestBench\MIPS_TB.vhd=VHDL Source Code
+.\src\TestBench\MUX_TB.vhd=VHDL Source Code
 .\src\TestBench\alu_TB.vhd=VHDL Test Bench
 .\src\TestBench\alu_TB_runtest.do=Macro
+.\src\waveform\MIPS_test1.awf=Waveform File
+.\src\waveform\ALU_test.awf=Waveform File
 

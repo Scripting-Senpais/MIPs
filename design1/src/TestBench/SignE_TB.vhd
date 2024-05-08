@@ -25,13 +25,13 @@ begin
 		  process 
 		  begin
 			  
-			  signE_in <= x"7fff" ;
+			  signE_in <= "0111111111111111" ;
 			  wait for 20 ns ;	  
 			  
-			  signE_in <= x"8000" ;
+			  signE_in <= "1000000000000000" ;
 			  wait for 20 ns ;
 			  
-			  signE_in <= x"ffff" ;
+			  signE_in <= "1111111111111111" ;
 			  wait for 20 ns ;
 			
 			  

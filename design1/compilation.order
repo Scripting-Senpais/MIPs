@@ -1,10 +1,10 @@
 .\src\MIPs.vhd
 .\src\MUX.vhd
-.\src\MUX_TB.vhd
 .\src\Sign_extender.vhd
-.\src\SignE_TB.vhd
-.\src\MIPS_TB.vhd
 .\src\ALU.vhd
 .\src\RegisterFile.vhd
 .\src\InstructionMemory.vhd
+.\src\TestBench\SignE_TB.vhd
+.\src\TestBench\MIPS_TB.vhd
+.\src\TestBench\MUX_TB.vhd
 .\src\TestBench\alu_TB.vhd

@@ -3,13 +3,11 @@ use ieee.numeric_std.all;
 use IEEE.STD_LOGIC_SIGNED.ALL;
 use ieee.std_logic_1164.all;
 
-	-- Add your library and packages declaration here ...
 
 entity alu_tb is
 end alu_tb;
 
 architecture TB_ARCHITECTURE of alu_tb is
-	-- Component declaration of the tested unit
 	component alu
 	port(
 		A1 : in std_logic_vector(31 downto 0);
@@ -47,8 +45,8 @@ begin
 	-- Add your stimulus here ...
 	STIM : PROCESS
 	BEGIN
-		A1 <= x"00000003";
-		A2 <= x"FFFFFFFF";
+		A1 <= "00000000000000000000000000000011";
+		A2 <= "11111111111111111111111111111111";
 		
 		ALU_CONTROL <= "001"; -- ADDITION
 		WAIT FOR 50 ns;

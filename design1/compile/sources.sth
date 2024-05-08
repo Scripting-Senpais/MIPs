@@ -1,6 +1,8 @@
 [Files List]
 C:\Program Files (x86)\Aldec\Active-HDL 6.3\VLIB\STD/src/standard.vhd=S
 C:\Program Files (x86)\Aldec\Active-HDL 6.3\VLIB\IEEE/src/stdlogic.vhd=S
-C:\hw_mips\MIPs\design1/src/Sign_extender.vhd=S
-C:\hw_mips\MIPs\design1/src/MUX.vhd=S
-C:\hw_mips\MIPs\design1/src/MIPs.vhd=S
+C:\Program Files (x86)\Aldec\Active-HDL 6.3\VLIB\IEEE/src/arith.vhd=S
+C:\Program Files (x86)\Aldec\Active-HDL 6.3\VLIB\IEEE/src/numstd.vhd=S
+C:\Program Files (x86)\Aldec\Active-HDL 6.3\VLIB\IEEE/src/signed.vhd=S
+d:\Uni\PROJECTS\HW Project\MIPs\design1/src/ALU.vhd=S
+d:\Uni\PROJECTS\HW Project\MIPs\design1/src/TestBench/alu_TB.vhd=S
