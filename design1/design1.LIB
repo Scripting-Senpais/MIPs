@@ -1,4 +1,4 @@
-timestamp=1715208232788
+timestamp=1715209292672
 
 [alu]
 A/behavioral=A/Behavioral 21|./src/ALU.vhd|17|1*148066
@@ -15,9 +15,9 @@ R=./src/TestBench/alu_TB.vhd|8
 V=0*165915
 
 [instructionmemory]
-A/behavioral=A/Behavioral 21|./src/InstructionMemory.vhd|12|1*176367
+A/behavioral=A/Behavioral 21|./src/InstructionMemory.vhd|12|1*181882
 B/behavioral=3*62983
-H/behavioral=0*199692
+H/behavioral=0*202900
 R=./src/InstructionMemory.vhd|5
 V=0*137991
 
@@ -87,7 +87,7 @@ R=./src/TestBench/registerfile_TB.vhd|62
 [~A]
 ./src/ALU.vhd~ALU=0*148660*149092
 ./src/ALU.vhd~BehavioralALU=0*180874*182044
-./src/InstructionMemory.vhd~BehavioralInstructionMemory=0*201699*202805
+./src/InstructionMemory.vhd~BehavioralInstructionMemory=0*204907*206013
 ./src/InstructionMemory.vhd~InstructionMemory=0*134498*134818
 ./src/MIPS_TB.vhd~MIPS_TB=0*33821*33963
 ./src/MIPS_TB.vhd~TBMIPS_TB=0*124152*124656
@@ -109,13 +109,13 @@ R=./src/TestBench/registerfile_TB.vhd|62
 ./src/TestBench/registerfile_TB.vhd~RegisterFile_TB=0*191775*191988
 ./src/TestBench/registerfile_TB.vhd~TB_ARCHITECTURERegisterFile_TB=0*197834*199160
 ./src/TestBench/registerfile_TB.vhd~TESTBENCH_FOR_registerfileRegisterFile_TB=0*199266*199575
-ModifyID=401
+ModifyID=407
 Version=73
 
 [~MFT]
-0=439|0design1.mgf|202805|145640
-1=113|1design1.mgf|176367|128678
-3=85|3design1.mgf|62983|47825
+0=445|0design1.mgf|206013|148848
+1=115|1design1.mgf|181882|134193
+3=87|3design1.mgf|62983|47825
 
 [~U]
 alu=11|0*151255|0*151530
