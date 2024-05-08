@@ -1,0 +1,75 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "e#9#std_logicc9 UX01ZWLH-"
+$S 1 1 MemRead
+$S 5 1 MemWrite
+I 2 "a#29#std_logic_vector(31 downto 0)1 ricd31 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S 137 2 32 Address
+$SC 9-133/4
+$BUS S 266 2 32 WriteData
+$SC 138-262/4
+$BUS S 395 2 32 ReadData
+$SC 267-391/4
+$ENDTIME 34627840000
+$WAVES 133
+=0 T 0
+=1 D 0 1
+R 1 34627840 =2 D 1k 1
+$VALUES
+V 1
+U
+R 2 17313920 0 1
+V 1
+0
+$END
+$WAVES 1 113 +4 +12
+*0
+*1
+$VALUES
+V 2
+U
+1
+$END
+$WAVES 5 238 +8 +16
+*0
+*2
+$VALUES
+V 2
+U
+1
+$END
+$WAVES 9-109/4 +12 +4
+*0
+*1
+$VALUES
+V 2
+U
+0
+$END
+$WAVES +13-+96/4 +8 +8-+8/4
+*0
+*2
+$VALUES
+V 2
+U
+0
+$END
+$WAVES +9-379/4 +12
+*0
+=3 D 0 2
+$VALUES
+V 2
+U
+0
+$END
+$WAVES +-8 +4
+*0
+*3
+=4 D 1k 2
+$VALUES
+V 3
+U
+1
+0
+$END
+$ENDWAVE

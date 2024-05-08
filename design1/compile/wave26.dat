@@ -1,0 +1,56 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "e#9#std_logicc9 UX01ZWLH-"
+$S 1 1 MemRead
+$S 5 1 MemWrite
+I 2 "a#29#std_logic_vector(31 downto 0)1 ricd31 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S 137 2 32 Address
+$SC 9-133/4
+$BUS S 266 2 32 WriteData
+$SC 138-262/4
+$BUS S 395 2 32 ReadData
+$SC 267-391/4
+I 3 "a#11#RAM_16_x_321 rict0 15 a#29#std_logic_vector(31 downto 0)1 ricd31 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S 2444 3 16 "UUT/DM"
+$SC 396-2440/4
+$S 1 0 MemRead
+$S 5 0 MemWrite
+$BUS S 2461 2 32 Address
+$SC 9-133/4
+$BUS S 2462 2 32 WriteData
+$SC 138-262/4
+$BUS S 2463 2 32 ReadData
+$SC 267-391/4
+$BUS S 2464 3 16 "UUT/DM"
+$SC 396-2440/4
+$S 1 0 MemRead
+$S 5 0 MemWrite
+$BUS S 2481 2 32 Address
+$SC 9-133/4
+$BUS S 2482 2 32 WriteData
+$SC 138-262/4
+$BUS S 2483 2 32 ReadData
+$SC 267-391/4
+$BUS S 2484 3 16 "UUT/DM"
+$SC 396-2440/4
+$IN 5 0 "UUT/MemWrite"
+$BUS IN 2501 2 32 "UUT/Address"
+$SC 9-133/4
+$BUS IN 2502 2 32 "UUT/WriteData"
+$SC 138-262/4
+$BUS S 2503 3 16 "UUT/DM"
+$SC 396-2440/4
+$IN 1 0 "UUT/MemRead"
+$BUS OUT 2520 2 32 "UUT/ReadData"
+$SC 267-391/4
+$IN 1 0 "UUT/MemRead"
+$IN 5 0 7 0 Write
+$BUS IN 2521 2 32 "UUT/Address"
+$SC 9-133/4
+$BUS IN 2522 2 32 "UUT/WriteData"
+$SC 138-262/4
+$BUS OUT 2523 2 32 4 4 Read
+$SC 267-391/4
+$BUS S 2524 3 16 "UUT/DM"
+$SC 396-2440/4
+$ENDWAVE

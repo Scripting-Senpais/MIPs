@@ -8,3 +8,5 @@ i<>.\src\ALU.vhd
 i<>.\src\RegisterFile.vhd
 i<>.\src\InstructionMemory.vhd
 i<>.\src\TestBench\alu_TB.vhd
+i<>.\src\DataMemory.vhd
+i<>.\src\TestBench\datamemory_TB.vhd
