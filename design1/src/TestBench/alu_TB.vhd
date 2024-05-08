@@ -1,5 +1,6 @@
 library ieee;
 use ieee.numeric_std.all;
+use IEEE.STD_LOGIC_SIGNED.ALL;
 use ieee.std_logic_1164.all;
 
 	-- Add your library and packages declaration here ...
@@ -15,7 +16,8 @@ architecture TB_ARCHITECTURE of alu_tb is
 		A2 : in std_logic_vector(31 downto 0);
 		ALU_CONTROL : in std_logic_vector(2 downto 0);
 		ALU_RESULT : out std_logic_vector(31 downto 0);
-		ZERO : out std_logic );
+		ZERO : out std_logic;
+		OVERFLOW : out std_logic );
 	end component;
 
 	-- Stimulus signals - signals mapped to the input and inout ports of tested entity
@@ -25,6 +27,7 @@ architecture TB_ARCHITECTURE of alu_tb is
 	-- Observed signals - signals mapped to the output ports of tested entity
 	signal ALU_RESULT : std_logic_vector(31 downto 0);
 	signal ZERO : std_logic;
+	signal OVERFLOW : std_logic;
 
 	-- Add your code here ...
 
@@ -37,7 +40,8 @@ begin
 			A2 => A2,
 			ALU_CONTROL => ALU_CONTROL,
 			ALU_RESULT => ALU_RESULT,
-			ZERO => ZERO
+			ZERO => ZERO,
+			OVERFLOW => OVERFLOW
 		);
 
 	-- Add your stimulus here ...

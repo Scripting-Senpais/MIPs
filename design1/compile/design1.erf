@@ -1,6 +1,5 @@
 MESSAGE "File: d:\Uni\PROJECTS\HW Project\MIPs\design1\src\TestBench\alu_TB.vhd" 
 MESSAGE "Compile Entity "alu_tb"" 
-MESSAGE "Entity `alu_tb' has been skipped - no difference detected." 
 MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"" 
 MESSAGE "Compile Configuration "TESTBENCH_FOR_alu"" 
 SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]" 

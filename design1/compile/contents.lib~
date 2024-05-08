@@ -1,10 +1,10 @@
-291
+343
 ~E 1 "./src/MIPs.vhd" 4 mips
 ~A 1 "./src/MIPs.vhd" 12 mips
-~E 1 "./src/TestBench/alu_TB.vhd" 7 alu_tb
-~A 1 "./src/TestBench/alu_TB.vhd" 10 tb_architecture
-~E 1 "./src/ALU.vhd" 5 alu
-~A 1 "./src/ALU.vhd" 15 behavioral
+~E 1 "./src/TestBench/alu_TB.vhd" 8 alu_tb
+~A 1 "./src/TestBench/alu_TB.vhd" 11 tb_architecture
+~E 1 "./src/ALU.vhd" 6 alu
+~A 1 "./src/ALU.vhd" 17 behavioral
 ~E 1 "./src/InstructionMemory.vhd" 5 instructionmemory
 ~A 1 "./src/InstructionMemory.vhd" 12 behavioral
 ~E 1 "./src/RegisterFile.vhd" 5 registerfile
@@ -19,4 +19,4 @@
 ~A 1 "./src/SignE_TB.vhd" 8 tb
 ~E 1 "./src/Sign_extender.vhd" 4 sign_extender
 ~A 1 "./src/Sign_extender.vhd" 11 behave
-~C 1 "./src/TestBench/alu_TB.vhd" 62 testbench_for_alu
+~C 1 "./src/TestBench/alu_TB.vhd" 66 testbench_for_alu
