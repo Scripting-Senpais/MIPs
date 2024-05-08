@@ -1,4 +1,4 @@
-elbread.dll ver. 1.0.5.365 Thu May 09 01:15:29 2024
+elbread.dll ver. 1.0.5.365 Thu May 09 01:35:14 2024
 
 
 ------------------------------------------
@@ -15,3 +15,9 @@ standard        | std
 std_logic_1164  | ieee
 numeric_std     | ieee
 -------------------------
+
+-----------------------------------
+Configuration             | Library
+-----------------------------------
+testbench_for_datamemory  | design1
+-----------------------------------

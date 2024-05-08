@@ -29,7 +29,7 @@ UCF=
 
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=
+HierarchyInformation=datamemory_tb|tb_architecture|0 
 ShowHide=ShowTopLevel
 Selected=
 

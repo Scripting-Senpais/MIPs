@@ -1,4 +1,4 @@
-885
+1274
 ~E 1 "./src/MUX.vhd" 4 mux
 ~A 1 "./src/MUX.vhd" 16 behave
 ~E 1 "./src/TestBench/datamemory_TB.vhd" 7 datamemory_tb
@@ -24,4 +24,4 @@
 ~E 1 "./src/Sign_extender.vhd" 4 sign_extender
 ~A 1 "./src/Sign_extender.vhd" 11 behave
 ~C 1 "./src/TestBench/alu_TB.vhd" 64 testbench_for_alu
-~C 1 "./src/TestBench/datamemory_TB.vhd" 61 testbench_for_datamemory
+~C 1 "./src/TestBench/datamemory_TB.vhd" 67 testbench_for_datamemory

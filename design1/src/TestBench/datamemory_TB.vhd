@@ -45,13 +45,19 @@ begin
 		Address <= "00000000000000000000000000110010";
 		memRead<='1';
 		wait for 1ns;
+		memRead<='0';
+		wait for 1ns;
 		Address <= "00000000000000000000000000110011";
 		MemWrite<='1';
-		WriteData<="11111111111111111111111111111111";	
-		wait for 1ns; 
+		WriteData<="00000000000000000000000001010001";	
+		wait for 1ns;
+		MemWrite<='0';
+		wait for 1ns;
 		Address <= "00000000000000000000000000110100";
 		MemWrite<='1';
 		WriteData<="11111111111111111111111111111111";	
+		wait for 1ns;
+		MemWrite<='0';
 		wait for 1ns;
 		
 		end process;
