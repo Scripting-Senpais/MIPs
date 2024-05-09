@@ -1,134 +1,160 @@
-timestamp=1715209292672
+timestamp=1715215438141
 
 [alu]
-A/behavioral=A/Behavioral 21|./src/ALU.vhd|17|1*148066
-B/behavioral=3*54952
-H/behavioral=0*180005
-R=./src/ALU.vhd|6
-V=0*152274
+A/behavioral=A/Behavioral 21|./src/alu.vhd|17|1*188696
+B/behavioral=3*67769
+H/behavioral=0*187955
+R=./src/alu.vhd|6
+V=0*13549
 
 [alu_tb]
-A/tb_architecture=A/TB_ARCHITECTURE 21|./src/TestBench/alu_TB.vhd|10|1*144261
-B/tb_architecture=3*53425
-H/tb_architecture=0*174358
-R=./src/TestBench/alu_TB.vhd|8
-V=0*165915
+A/tb_architecture=A/TB_ARCHITECTURE 21|./src/TestBench/alu_TB.vhd|10|1*214969
+B/tb_architecture=3*77269
+H/tb_architecture=0*204581
+R=./src/TestBench/alu_TB.vhd|7
+V=0*71774
+
+[datamemory]
+A/datamemory=A/DataMemory 21|./src/datamemory.vhd|17|1*192274
+B/datamemory=3*72827
+H/datamemory=0*190061
+R=./src/datamemory.vhd|5
+V=0*30778
+
+[datamemory_tb]
+A/tb_architecture=A/TB_ARCHITECTURE 21|./src/TestBench/datamemory_TB.vhd|10|1*218774
+B/tb_architecture=3*78796
+H/tb_architecture=0*210228
+R=./src/TestBench/datamemory_TB.vhd|7
+V=0*77130
 
 [instructionmemory]
-A/behavioral=A/Behavioral 21|./src/InstructionMemory.vhd|12|1*181882
-B/behavioral=3*62983
-H/behavioral=0*202900
-R=./src/InstructionMemory.vhd|5
-V=0*137991
+A/behavioral=A/Behavioral 21|./src/instructionmemory.vhd|12|1*183181
+B/behavioral=3*67100
+H/behavioral=0*184747
+R=./src/instructionmemory.vhd|5
+V=0*39238
 
 [mips]
-A/mips=A/MIPs 21|./src/MIPs.vhd|12|1*86517
-H/mips=0*110807
-R=./src/MIPs.vhd|4
-V=0*827
+A/mips=A/MIPs 21|./src/mips.vhd|12|1*211378
+H/mips=0*198834
+R=./src/mips.vhd|4
+V=0*25962
 
 [mips_tb]
-A/tb=A/TB 21|./src/MIPS_TB.vhd|8|1*97406
-B/tb=3*36146
-H/tb=0*123485
-R=./src/MIPS_TB.vhd|4
-V=0*34262
+A/tb=A/TB 21|./src/TestBench/MIPS_TB.vhd|8|1*222325
+B/tb=3*81031
+H/tb=0*215000
+R=./src/TestBench/MIPS_TB.vhd|4
+V=0*79353
 
 [mux]
-A/behave=A/Behave 21|./src/MUX.vhd|16|1*90108
-B/behave=3*32016
-H/behave=0*116554
-R=./src/MUX.vhd|4
-V=0*3463
+A/behave=A/Behave 21|./src/mux.vhd|16|1*209612
+B/behave=3*76304
+H/behave=0*198527
+R=./src/mux.vhd|4
+V=0*17396
 
 [mux_tb]
-A/tb=21|./src/MUX_TB.vhd|7|1*91874
-B/tb=3*32981
-H/tb=0*116861
-R=./src/MUX_TB.vhd|4
-V=0*9175
+A/tb=21|./src/TestBench/MUX_TB.vhd|7|1*223926
+B/tb=3*82501
+H/tb=0*216258
+R=./src/TestBench/MUX_TB.vhd|4
+V=0*82952
 
 [registerfile]
-A/behavioral=A/Behavioral 21|./src/RegisterFile.vhd|17|1*161816
-B/behavioral=3*60010
-H/behavioral=0*186943
-R=./src/RegisterFile.vhd|5
-V=0*131373
+A/behavioral=A/Behavioral 21|./src/registerfile.vhd|17|1*199440
+B/behavioral=3*74750
+H/behavioral=0*193695
+R=./src/registerfile.vhd|5
+V=0*6810
 
 [registerfile_tb]
-A/tb_architecture=A/TB_ARCHITECTURE 21|./src/TestBench/registerfile_TB.vhd|10|1*171988
-B/tb_architecture=3*61564
-H/tb_architecture=0*192476
+A/tb_architecture=A/TB_ARCHITECTURE 21|./src/TestBench/registerfile_TB.vhd|10|1*225919
+B/tb_architecture=3*83787
+H/tb_architecture=0*219319
 R=./src/TestBench/registerfile_TB.vhd|7
-V=0*192372
+V=0*90425
 
 [sign_extender]
-A/behave=A/Behave 21|./src/Sign_extender.vhd|11|1*93857
-B/behave=3*34267
-H/behave=0*119902
-R=./src/Sign_extender.vhd|4
-V=0*10627
+A/behave=A/Behave 21|./src/sign_extender.vhd|11|1*198046
+B/behave=3*73965
+H/behave=0*193277
+R=./src/sign_extender.vhd|4
+V=0*33890
 
 [signe_tb]
-A/tb=A/TB 21|./src/SignE_TB.vhd|8|1*142106
-B/tb=3*52331
-H/tb=0*171160
-R=./src/SignE_TB.vhd|4
-V=0*15316
+A/tb=A/TB 21|./src/TestBench/SignE_TB.vhd|8|1*230298
+B/tb=3*85206
+H/tb=0*226535
+R=./src/TestBench/SignE_TB.vhd|4
+V=0*94645
 
 [testbench_for_alu]
-E=1*147638
+E=1*218346
 R=./src/TestBench/alu_TB.vhd|64
 
+[testbench_for_datamemory]
+E=1*221886
+R=./src/TestBench/datamemory_TB.vhd|67
+
 [testbench_for_registerfile]
-E=1*175918
+E=1*229849
 R=./src/TestBench/registerfile_TB.vhd|62
 
 [~A]
-./src/ALU.vhd~ALU=0*148660*149092
-./src/ALU.vhd~BehavioralALU=0*180874*182044
-./src/InstructionMemory.vhd~BehavioralInstructionMemory=0*204907*206013
-./src/InstructionMemory.vhd~InstructionMemory=0*134498*134818
-./src/MIPS_TB.vhd~MIPS_TB=0*33821*33963
-./src/MIPS_TB.vhd~TBMIPS_TB=0*124152*124656
-./src/MIPs.vhd~MIPs=0*0*186
-./src/MIPs.vhd~MIPsMIPs=0*115599*116491
-./src/MUX.vhd~BehaveMUX=0*116641*116798
-./src/MUX.vhd~MUX=0*1829*2172
-./src/MUX_TB.vhd~MUX_TB=0*5704*5842
-./src/MUX_TB.vhd~tbMUX_TB=0*119122*119837
-./src/RegisterFile.vhd~BehavioralRegisterFile=0*189823*191690
-./src/RegisterFile.vhd~RegisterFile=0*126035*126567
-./src/SignE_TB.vhd~SignE_TB=0*11699*11845
-./src/SignE_TB.vhd~TBSignE_TB=0*173660*174289
-./src/Sign_extender.vhd~BehaveSign_extender=0*119989*120237
-./src/Sign_extender.vhd~Sign_extender=0*9251*9520
-./src/TestBench/alu_TB.vhd~TB_ARCHITECTUREalu_tb=0*178499*179590
-./src/TestBench/alu_TB.vhd~TESTBENCH_FOR_alualu_tb=0*179678*179915
-./src/TestBench/alu_TB.vhd~alu_tb=0*160087*160297
-./src/TestBench/registerfile_TB.vhd~RegisterFile_TB=0*191775*191988
-./src/TestBench/registerfile_TB.vhd~TB_ARCHITECTURERegisterFile_TB=0*197834*199160
-./src/TestBench/registerfile_TB.vhd~TESTBENCH_FOR_registerfileRegisterFile_TB=0*199266*199575
-ModifyID=407
+./src/TestBench/MIPS_TB.vhd~MIPS_TB=0*77634*77786
+./src/TestBench/MIPS_TB.vhd~TBMIPS_TB=0*215667*216181
+./src/TestBench/MUX_TB.vhd~MUX_TB=0*79441*79589
+./src/TestBench/MUX_TB.vhd~tbMUX_TB=0*218519*219244
+./src/TestBench/SignE_TB.vhd~SignE_TB=0*90955*91111
+./src/TestBench/SignE_TB.vhd~TBSignE_TB=0*229035*229674
+./src/TestBench/alu_TB.vhd~TB_ARCHITECTUREalu_tb=0*208722*209813
+./src/TestBench/alu_TB.vhd~TESTBENCH_FOR_alualu_tb=0*209901*210138
+./src/TestBench/alu_TB.vhd~alu_tb=0*65899*66109
+./src/TestBench/datamemory_TB.vhd~TB_ARCHITECTUREdatamemory_tb=0*213267*214494
+./src/TestBench/datamemory_TB.vhd~TESTBENCH_FOR_datamemorydatamemory_tb=0*214596*214889
+./src/TestBench/datamemory_TB.vhd~datamemory_tb=0*72187*72392
+./src/TestBench/registerfile_TB.vhd~RegisterFile_TB=0*83038*83251
+./src/TestBench/registerfile_TB.vhd~TB_ARCHITECTURERegisterFile_TB=0*224677*226003
+./src/TestBench/registerfile_TB.vhd~TESTBENCH_FOR_registerfileRegisterFile_TB=0*226109*226418
+./src/alu.vhd~ALU=0*9935*10367
+./src/alu.vhd~BehavioralALU=0*188824*189994
+./src/datamemory.vhd~DataMemory=0*26217*26606
+./src/datamemory.vhd~DataMemoryDataMemory=0*192068*193196
+./src/instructionmemory.vhd~BehavioralInstructionMemory=0*186754*187860
+./src/instructionmemory.vhd~InstructionMemory=0*34962*35282
+./src/mips.vhd~MIPs=0*19637*19823
+./src/mips.vhd~MIPsMIPs=0*203626*204518
+./src/mux.vhd~BehaveMUX=0*198614*198771
+./src/mux.vhd~MUX=0*15762*16105
+./src/registerfile.vhd~BehavioralRegisterFile=0*196575*198442
+./src/registerfile.vhd~RegisterFile=0*0*532
+./src/sign_extender.vhd~BehaveSign_extender=0*193364*193612
+./src/sign_extender.vhd~Sign_extender=0*32514*32783
+ModifyID=430
 Version=73
 
 [~MFT]
-0=445|0design1.mgf|206013|148848
-1=115|1design1.mgf|181882|134193
-3=87|3design1.mgf|62983|47825
+0=427|0design1.mgf|229674|160599
+1=127|1design1.mgf|230298|183181
+3=95|3design1.mgf|85206|67100
 
 [~U]
-alu=11|0*151255|0*151530
-alu_tb=11|0*165643|0*165702
-instructionmemory=InstructionMemory 11|0*137328|0*137535
-mips=MIPs 11|0*494|0*620
-mips_tb=MIPS_TB 11|0*34028|0*34090
-mux=MUX 11|0*2536|0*2790
-mux_tb=MUX_TB 11|0*8946|0*9005
-registerfile=RegisterFile 11|0*130002|0*130381
-registerfile_tb=RegisterFile_TB 11|0*192079|0*192165
-sign_extender=Sign_extender 11|0*10015|0*10205
-signe_tb=SignE_TB 11|0*15077|0*15142
+alu=ALU 11|0*12530|0*12805
+alu_tb=11|0*71502|0*71561
+datamemory=DataMemory 11|0*29893|0*30160
+datamemory_tb=11|0*76847|0*76927
+instructionmemory=InstructionMemory 11|0*38575|0*38782
+mips=MIPs 11|0*25629|0*25755
+mips_tb=MIPS_TB 11|0*79119|0*79181
+mux=MUX 11|0*16469|0*16723
+mux_tb=MUX_TB 11|0*82723|0*82782
+registerfile=RegisterFile 11|0*5439|0*5818
+registerfile_tb=RegisterFile_TB 11|0*90132|0*90218
+sign_extender=Sign_extender 11|0*33278|0*33468
+signe_tb=SignE_TB 11|0*94406|0*94471
 testbench_for_alu=TESTBENCH_FOR_alu 2||
+testbench_for_datamemory=TESTBENCH_FOR_datamemory 2||
 testbench_for_registerfile=TESTBENCH_FOR_registerfile 2||
 

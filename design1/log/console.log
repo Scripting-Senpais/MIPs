@@ -1,0 +1,62 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# Design Explorer: Shortcut to "C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1.aws" design added.
+acom $DSN/src/instructionmemory.vhd $DSN/src/alu.vhd $DSN/src/datamemory.vhd $DSN/src/sign_extender.vhd $DSN/src/registerfile.vhd $DSN/src/mux.vhd $DSN/src/mips.vhd $DSN/src/testbench/alu_tb.vhd $DSN/src/testbench/datamemory_tb.vhd $DSN/src/testbench/mips_tb.vhd $DSN/src/testbench/mux_tb.vhd $DSN/src/testbench/registerfile_tb.vhd $DSN/src/testbench/signe_tb.vhd
+# Compile...
+# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\instructionmemory.vhd
+# Compile Entity "InstructionMemory"
+# Entity `InstructionMemory' has been skipped - no difference detected.
+# Compile Architecture "Behavioral" of Entity "InstructionMemory"
+# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\alu.vhd
+# Compile Entity "ALU"
+# Entity `ALU' has been skipped - no difference detected.
+# Compile Architecture "Behavioral" of Entity "ALU"
+# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\datamemory.vhd
+# Compile Entity "DataMemory"
+# Entity `DataMemory' has been skipped - no difference detected.
+# Compile Architecture "DataMemory" of Entity "DataMemory"
+# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\sign_extender.vhd
+# Compile Entity "Sign_extender"
+# Entity `Sign_extender' has been skipped - no difference detected.
+# Compile Architecture "Behave" of Entity "Sign_extender"
+# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\registerfile.vhd
+# Compile Entity "RegisterFile"
+# Entity `RegisterFile' has been skipped - no difference detected.
+# Compile Architecture "Behavioral" of Entity "RegisterFile"
+# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\mux.vhd
+# Compile Entity "MUX"
+# Entity `MUX' has been skipped - no difference detected.
+# Compile Architecture "Behave" of Entity "MUX"
+# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\mips.vhd
+# Compile Entity "MIPs"
+# Entity `MIPs' has been skipped - no difference detected.
+# Compile Architecture "MIPs" of Entity "MIPs"
+# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\alu_TB.vhd
+# Compile Entity "alu_tb"
+# Entity `alu_tb' has been skipped - no difference detected.
+# Compile Architecture "TB_ARCHITECTURE" of Entity "alu_tb"
+# Compile Configuration "TESTBENCH_FOR_alu"
+# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\datamemory_TB.vhd
+# Compile Entity "datamemory_tb"
+# Entity `datamemory_tb' has been skipped - no difference detected.
+# Compile Architecture "TB_ARCHITECTURE" of Entity "datamemory_tb"
+# Compile Configuration "TESTBENCH_FOR_datamemory"
+# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\MIPS_TB.vhd
+# Compile Entity "MIPS_TB"
+# Entity `MIPS_TB' has been skipped - no difference detected.
+# Compile Architecture "TB" of Entity "MIPS_TB"
+# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\MUX_TB.vhd
+# Compile Entity "MUX_TB"
+# Entity `MUX_TB' has been skipped - no difference detected.
+# Compile Architecture "tb" of Entity "MUX_TB"
+# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\registerfile_TB.vhd
+# Compile Entity "RegisterFile_TB"
+# Entity `RegisterFile_TB' has been skipped - no difference detected.
+# Compile Architecture "TB_ARCHITECTURE" of Entity "RegisterFile_TB"
+# Compile Configuration "TESTBENCH_FOR_registerfile"
+# File: C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\SignE_TB.vhd
+# Compile Entity "SignE_TB"
+# Entity `SignE_TB' has been skipped - no difference detected.
+# Compile Architecture "TB" of Entity "SignE_TB"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.8 [s]
+acom $DSN/src/instructionmemory.vhd $DSN/src/alu.vhd $DSN/src/datamemory.vhd $DSN/src/sign_extender.vhd $DSN/src/registerfile.vhd $DSN/src/mux.vhd $DSN/src/mips.vhd $DSN/src/testbench/alu_tb.vhd $DSN/src/testbench/datamemory_tb.vhd $DSN/src/testbench/mips_tb.vhd $DSN/src/testbench/mux_tb.vhd $DSN/src/testbench/registerf

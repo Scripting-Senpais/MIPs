@@ -17,7 +17,7 @@ end DataMemory;
 architecture DataMemory of DataMemory is
 type RAM_16_x_32 is array(0 to 15) of std_logic_vector(31 downto 0);
 signal DM : RAM_16_x_32:=(
-"00000000000000000000000000000110",	--assume starts at 50
+"00000000000000000000000000000110",	--assume starts at 4
 "00000000000000000000000000000000",
 "00000000000000000000000000000000",
 "00000000000000000000000000000000",
@@ -38,10 +38,10 @@ begin
 	process(memRead,memWrite)
 	begin 
 		if(memWrite='1') then
-			DM((to_integer(unsigned(Address)))-50)<= WriteData;
+			DM((to_integer(unsigned(Address)))-4)<= WriteData;
 		end if;
 		if(memRead='1') then
-			ReadData<=DM((to_integer(unsigned(Address)))-50);
+			ReadData<=DM((to_integer(unsigned(Address)))-4);
 		end if;
 	end process;
 	

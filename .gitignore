@@ -13,5 +13,11 @@
 *.top
 *.sth
 *.dat
-*.aws
 *.wsw
+*.wsp
+*.LIB
+*.set
+*.lib~
+*.order
+*.aws
+*.adf

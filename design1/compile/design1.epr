@@ -1,12 +1,14 @@
-"C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\MIPs.vhd" design1 1 0 1162435653
-"C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\MUX.vhd" design1 1 0 0
-"C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\Sign_extender.vhd" design1 1 0 0
-"C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\ALU.vhd" design1 1 0 1146377052
-"C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\RegisterFile.vhd" design1 1 0 0
-"C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\InstructionMemory.vhd" design1 1 0 0
-"C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\SignE_TB.vhd" design1 1 0 0
+"C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\instructionmemory.vhd" design1 1 0 1785688688
+"C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\alu.vhd" design1 1 0 0
+"C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\datamemory.vhd" design1 1 0 0
+"C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\sign_extender.vhd" design1 1 0 0
+"C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\registerfile.vhd" design1 1 0 0
+"C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\mux.vhd" design1 1 0 0
+"C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\mips.vhd" design1 1 0 0
+"C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\alu_TB.vhd" design1 1 0 0
+"C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\datamemory_TB.vhd" design1 1 0 0
 "C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\MIPS_TB.vhd" design1 1 0 0
 "C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\MUX_TB.vhd" design1 1 0 0
-"C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\alu_TB.vhd" design1 1 0 0
 "C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\registerfile_TB.vhd" design1 1 0 0
+"C:\Users\Sandy 3Laa\Desktop\HW Project\MIPs\design1\src\TestBench\SignE_TB.vhd" design1 1 0 0
 . . 0 0 0
