@@ -42,12 +42,12 @@ begin
 
 	process
 	begin
-		Address <= "00000000000000000000000000110010";
+		Address <= "00000000000000000000000000000100"; --4$(0)
 		memRead<='1';
 		wait for 1ns;
 		memRead<='0';
 		wait for 1ns;
-		Address <= "00000000000000000000000000110011";
+		Address <= "00000000000000000000000000000101"; --4$(1)
 		MemWrite<='1';
 		WriteData<="00000000000000000000000001010001";	
 		wait for 1ns;
@@ -55,7 +55,7 @@ begin
 		wait for 1ns;
 		Address <= "00000000000000000000000000110100";
 		MemWrite<='1';
-		WriteData<="11111111111111111111111111111111";	
+		WriteData<="00000000000000000000000000000110"; --4$(2)	
 		wait for 1ns;
 		MemWrite<='0';
 		wait for 1ns;
