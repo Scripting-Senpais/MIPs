@@ -13,5 +13,6 @@
 *.top
 *.sth
 *.dat
-*.aws
 *.wsw
+*.wsp
+*.LIB
