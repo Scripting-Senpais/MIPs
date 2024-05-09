@@ -13,7 +13,8 @@ end MIPs;
 
 architecture MIPs of MIPs is 
 signal PC : STD_LOGIC_VECTOR(31 DOWNTO 0) := "00000000000000000000000000000000";
-    signal prev_PC : STD_LOGIC_VECTOR(31 DOWNTO 0) := (others => '0');
+signal prev_PC : STD_LOGIC_VECTOR(31 DOWNTO 0) := (others => '0');
+signal next_PC : STD_LOGIC_VECTOR(31 DOWNTO 0) := (others => '0');
     signal lastBranch : STD_LOGIC_VECTOR(31 DOWNTO 0) := (others => '0');
     signal branchExecuted : BOOLEAN := FALSE;  -- Flag to track if branch executed
 
@@ -103,7 +104,7 @@ signal mux_out : std_logic_vector	(31 downto 0);
 signal Instruction: STD_LOGIC_VECTOR(31 DOWNTO 0);
 signal RegDst: std_logic;
 signal mux2_out : std_logic_vector(4 downto 0);
-signal next_pc:STD_LOGIC_VECTOR(31 DOWNTO 0);
+
 signal next_pc_for_branch:STD_LOGIC_VECTOR(31 DOWNTO 0);
 signal RegWrite: std_logic;
 signal mux3_out : std_logic_vector	(31 downto 0);
@@ -149,9 +150,14 @@ BEGIN
 			MemWrite<='0' after 1 ns;
 			memRead<='0' after 1 ns;
 
-        elsif clk='1' then
-			prev_pc<=PC;
-			PC <= std_logic_vector(unsigned(PC) + 1) after 1ns;
+        elsif clk='1' then	
+			prev_PC<=PC;
+			next_PC<=std_logic_vector(unsigned(PC) + 1) after 1ns;	
+			andGate<= Branch and ZERO;
+			PC<=mux4_out;		  
+			
+			
+		
         end if;
     end process;
 	
@@ -243,7 +249,29 @@ BEGIN
 		  
 		 
 	
+ addForOffset: alu
+	port map ( 
+       	  A1 =>next_PC ,
+	A2 =>signE_out ,
+	ALU_CONTROL =>"001" ,
+	ALU_RESULT =>next_pc_for_branch ,
+	ZERO=>ZERO2 ,
+	OVERFLOW=>OVERFLOW2 
+	);
 	
+	  
+	--mux connected to offset and pcAdd to pc
+   M4: MUX
+   generic map (N => 32)
+   port map (
+       	  mux_in0 => next_PC,
+	      mux_in1 => next_pc_for_branch,
+	      mux_s1  => andGate ,
+	      mux_out => mux4_out
+		  );
+		  
+
+
 	
 		  
 		  
