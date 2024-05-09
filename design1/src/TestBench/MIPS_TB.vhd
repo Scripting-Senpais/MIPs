@@ -1,4 +1,25 @@
+---------------------------------------------------------------------------------------------------
+--
+-- Title       : Test Bench for mips
+-- Design      : design1
+-- Author      : Sandy 3Laa
+-- Company     : Dell
+--
+---------------------------------------------------------------------------------------------------
+--
+-- File        : $DSN\src\TestBench\mips_TB.vhd
+-- Generated   : 5/9/2024, 7:51 PM
+-- From        : $DSN\src\mips.vhd
+-- By          : Active-HDL Built-in Test Bench Generator ver. 1.2s
+--
+---------------------------------------------------------------------------------------------------
+--
+-- Description : Automatically generated Test Bench for mips_tb
+--
+---------------------------------------------------------------------------------------------------
+
 library ieee;
+use ieee.numeric_std.all;
 use ieee.std_logic_1164.all;
 
 	-- Add your library and packages declaration here ...
@@ -29,11 +50,22 @@ begin
 			clk => clk,
 			reset => reset
 		);
-		process
-		begin
-		clk <='1';
-		wait for 50ns;	
-			end process;
+
+	process 																   												   
+	begin 
+	for i in 0 to 100 loop
+            clk <= '1';
+            wait for 5 ns;
+            clk <= '0';
+            wait for 1 ns;
+        end loop;
+        wait;
+			
+			
+			
+			
+				
+		end process;
 
 end TB_ARCHITECTURE;
 

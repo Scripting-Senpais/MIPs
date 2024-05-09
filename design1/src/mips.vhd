@@ -1,5 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
+use IEEE.numeric_std.all;
 
 entity MIPs is
 	port(
@@ -11,7 +12,10 @@ end MIPs;
 
 
 architecture MIPs of MIPs is 
-signal PC:STD_LOGIC_VECTOR(31 DOWNTO 0);
+signal PC : STD_LOGIC_VECTOR(31 DOWNTO 0) := "00000000000000000000000000000000";
+    signal prev_PC : STD_LOGIC_VECTOR(31 DOWNTO 0) := (others => '0');
+    signal lastBranch : STD_LOGIC_VECTOR(31 DOWNTO 0) := (others => '0');
+    signal branchExecuted : BOOLEAN := FALSE;  -- Flag to track if branch executed
 
 
 
@@ -124,9 +128,7 @@ signal andGate :  STD_LOGIC;
 
 
 
-
-
-
+ 
 
 
 
@@ -134,7 +136,26 @@ signal andGate :  STD_LOGIC;
 
 
 begin
-   --mux connected to sign extender and register file to alu
+   
+PROCESS(clk,reset)
+BEGIN 		
+	
+	
+		if reset = '1' then
+            PC <= (others => '0');
+            prev_PC <= (others => '0');
+            lastBranch <= (others => '0');
+            branchExecuted <= FALSE;
+			MemWrite<='0' after 1 ns;
+			memRead<='0' after 1 ns;
+
+        elsif clk='1' then
+			prev_pc<=PC;
+			PC <= std_logic_vector(unsigned(PC) + 1) after 1ns;
+        end if;
+    end process;
+	
+	--mux connected to sign extender and register file to alu
    M1: MUX
    generic map (N => 32)
    port map (
@@ -220,40 +241,12 @@ begin
 		  );
 		  
 		  
-	addForPc: alu
-	port map ( 
-       	  A1 =>PC ,
-	A2 =>"00000000000000000000000000000001" ,
-	ALU_CONTROL =>"001" ,
-	ALU_RESULT =>next_pc ,
-	ZERO=>ZERO1 ,
-	OVERFLOW=>OVERFLOW1 
-	);		 
+		 
 	
 	
-	addForOffset: alu
-	port map ( 
-       	  A1 =>next_pc ,
-	A2 =>signE_out ,
-	ALU_CONTROL =>"001" ,
-	ALU_RESULT =>next_pc_for_branch ,
-	ZERO=>ZERO2 ,
-	OVERFLOW=>OVERFLOW2 
-	);
 	
-	 andGate<= Branch and ZERO;
-	--mux connected to offset and pcAdd to pc
-   M4: MUX
-   generic map (N => 32)
-   port map (
-       	  mux_in0 => next_pc,
-	      mux_in1 => next_pc_for_branch,
-	      mux_s1  => andGate ,
-	      mux_out => mux4_out
-		  );
 		  
 		  
-		  PC<=mux4_out;
 		  
 
 end MIPs;
