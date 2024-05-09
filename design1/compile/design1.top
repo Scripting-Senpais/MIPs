@@ -1,5 +1,0 @@
-RegisterFile ENTITY
-DataMemory ENTITY
-MIPs ENTITY
-InstructionMemory ENTITY
-ALU ENTITY

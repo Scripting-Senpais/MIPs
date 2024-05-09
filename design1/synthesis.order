@@ -1,7 +1,0 @@
-i<>.\src\registerfile.vhd
-i<>.\src\alu.vhd
-i<>.\src\mux.vhd
-i<>.\src\mips.vhd
-i<>.\src\datamemory.vhd
-i<>.\src\sign_extender.vhd
-i<>.\src\instructionmemory.vhd
