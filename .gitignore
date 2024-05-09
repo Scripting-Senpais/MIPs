@@ -16,3 +16,8 @@
 *.wsw
 *.wsp
 *.LIB
+*.set
+*.lib~
+*.order
+*.aws
+*.adf
