@@ -1,0 +1,17 @@
+# Active-HDL project files
+*.asbd
+*.awc
+*.lib
+*.mgf
+*.data
+*.index
+*.cfg
+*.log
+*.cmd
+*.epr
+*.erf
+*.top
+*.sth
+*.dat
+*.aws
+*.wsw
