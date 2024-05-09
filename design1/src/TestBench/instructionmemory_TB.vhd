@@ -16,7 +16,7 @@ architecture TB_ARCHITECTURE of IinstructionMemory_TB is
 	end component;
 
 	-- Stimulus signals - signals mapped to the input and inout ports of tested entity
-	signal ReadAddress : std_logic_vector(31 downto 0) := "00000011111111111111111111111100";
+	signal ReadAddress : std_logic_vector(31 downto 0);
 	-- Observed signals - signals mapped to the output ports of tested entity
 	signal Instruction : std_logic_vector(31 downto 0);
 
@@ -35,11 +35,10 @@ begin
 	
 	STIM: process
 	begin
-		for I in 0 to 11 loop
-			ReadAddress <= "10000000000000000000000" or std_logic_vector(to_unsigned(I*4, 32));
-			wait for 25 ns;
-		end loop;
-		
+		ReadAddress <= "00000000000000000000000000000000";
+		wait for 1 ns;
+		ReadAddress <= "00000000000000000000000000000001";
+		wait for 1 ns;
 	end process;
 			
 
