@@ -1,53 +1,47 @@
-    library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
-entity MIPS_TB is 
-	
-end MIPS_TB;
+	-- Add your library and packages declaration here ...
 
-architecture TB of MIPS_TB iS
+entity mips_tb is
+end mips_tb;
 
-component MIPS
-		 port(
-		 clk : in STD_LOGIC;
-		 reset : in STD_LOGIC
-	     );	  
-end component ;
+architecture TB_ARCHITECTURE of mips_tb is
+	-- Component declaration of the tested unit
+	component mips
+	port(
+		clk : in std_logic;
+		reset : in std_logic );
+	end component;
 
-signal clk : std_logic := '0' ;
-signal reset : std_logic := '0' ;	
+	-- Stimulus signals - signals mapped to the input and inout ports of tested entity
+	signal clk : std_logic;
+	signal reset : std_logic;
+	-- Observed signals - signals mapped to the output ports of tested entity
 
-constant clk_period : time := 20 ns;
+	-- Add your code here ...
 
-begin  
-	
-	tree: MIPS port map (
-	clk => clk,
-	reset => reset 
-	);
-	
-	clk_process: process
-	begin 
-		clk <= '0';
-		wait for clk_period/2; 
-		
-		clk <= '1';
-		wait for clk_period/2;
-	end process ; 
-	
-	
-	 stim_process: process 
-	begin  
-		
-		wait for 100 ns ;
-		
-		
-	assert false 
-	  report "end"
-	  severity failure;
-	
-end process;
+begin
 
-end TB;
+	-- Unit Under Test port map
+	UUT : mips
+		port map (
+			clk => clk,
+			reset => reset
+		);
+		process
+		begin
+		clk <='1';
+		wait for 50ns;	
+			end process;
 
-	
+end TB_ARCHITECTURE;
+
+configuration TESTBENCH_FOR_mips of mips_tb is
+	for TB_ARCHITECTURE
+		for UUT : mips
+			use entity work.mips(mips);
+		end for;
+	end for;
+end TESTBENCH_FOR_mips;
+
