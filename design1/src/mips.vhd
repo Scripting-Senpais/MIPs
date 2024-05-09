@@ -2,7 +2,8 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 
 entity MIPs is
-	 port(
+	port(
+		 
 		 clk : in STD_LOGIC;
 		 reset : in STD_LOGIC
 	     );
@@ -10,6 +11,9 @@ end MIPs;
 
 
 architecture MIPs of MIPs is 
+signal PC:STD_LOGIC_VECTOR(31 DOWNTO 0);
+
+
 
 component MUX 
 	generic (
@@ -95,7 +99,8 @@ signal mux_out : std_logic_vector	(31 downto 0);
 signal Instruction: STD_LOGIC_VECTOR(31 DOWNTO 0);
 signal RegDst: std_logic;
 signal mux2_out : std_logic_vector(4 downto 0);
-signal PC:STD_LOGIC_VECTOR(31 DOWNTO 0):="00000000000000000000000000000000";
+signal next_pc:STD_LOGIC_VECTOR(31 DOWNTO 0);
+signal next_pc_for_branch:STD_LOGIC_VECTOR(31 DOWNTO 0);
 signal RegWrite: std_logic;
 signal mux3_out : std_logic_vector	(31 downto 0);
 signal ReadData1 :	STD_LOGIC_VECTOR (31 DOWNTO 0);
@@ -107,7 +112,14 @@ signal op: std_logic_vector(2 downto 0);
 signal ALU_RESULT :  STD_LOGIC_VECTOR (31 DOWNTO 0);
 signal ZERO :  STD_LOGIC;
 signal OVERFLOW :  STD_LOGIC;
+signal ZERO1 :  STD_LOGIC;
+signal OVERFLOW1 :  STD_LOGIC;
+signal ZERO2 :  STD_LOGIC;
+signal OVERFLOW2 :  STD_LOGIC;
 signal ReadData :  STD_LOGIC_VECTOR(31 downto 0);
+signal mux4_out : std_logic_vector	(31 downto 0);
+signal andGate :  STD_LOGIC;
+
 
 
 
@@ -206,5 +218,42 @@ begin
 	      mux_s1  => memToReg,
 	      mux_out => mux3_out
 		  );
+		  
+		  
+	addForPc: alu
+	port map ( 
+       	  A1 =>PC ,
+	A2 =>"00000000000000000000000000000001" ,
+	ALU_CONTROL =>"001" ,
+	ALU_RESULT =>next_pc ,
+	ZERO=>ZERO1 ,
+	OVERFLOW=>OVERFLOW1 
+	);		 
+	
+	
+	addForOffset: alu
+	port map ( 
+       	  A1 =>next_pc ,
+	A2 =>signE_out ,
+	ALU_CONTROL =>"001" ,
+	ALU_RESULT =>next_pc_for_branch ,
+	ZERO=>ZERO2 ,
+	OVERFLOW=>OVERFLOW2 
+	);
+	
+	 andGate<= Branch and ZERO;
+	--mux connected to offset and pcAdd to pc
+   M4: MUX
+   generic map (N => 32)
+   port map (
+       	  mux_in0 => next_pc,
+	      mux_in1 => next_pc_for_branch,
+	      mux_s1  => andGate ,
+	      mux_out => mux4_out
+		  );
+		  
+		  
+		  PC<=mux4_out;
+		  
 
 end MIPs;
