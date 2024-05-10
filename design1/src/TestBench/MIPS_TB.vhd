@@ -52,7 +52,8 @@ begin
 		);
 
 	process 																   												   
-	begin 
+	begin 	
+		wait for 5 ns;
 	for i in 0 to 100 loop
             clk <= '1';
             wait for 5 ns;

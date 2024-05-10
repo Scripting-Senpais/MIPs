@@ -45,7 +45,8 @@ begin
 				RegWrite<='1' after 10 ns;
 			
 				
-				when "101010"=>--load
+				when "101010"=>--load 
+				op<="001";
 				RegDst<='0';
 				Branch<='0';
 				memRead<='1';
@@ -57,6 +58,7 @@ begin
 				
 				
 				when "010101"=>--store
+				op<="001";
 				RegDst<='X';
 				Branch<='0';
 				memToReg<='X';
@@ -66,9 +68,10 @@ begin
 				RegWrite<='0' after 10 ns;
 				
 				
-				when "100000"=>--branch equal
+				when "100000"=>--branch equal 
+				op<="001";
 				RegDst<='X';
-				Branch<='1' after 2ns;
+				Branch<='1';
 				memToReg<='X';
 				memRead<='0';
 				memWrite<='0';
@@ -77,8 +80,9 @@ begin
 				
 				
 				when "000001"=> --branch not equal
+				op<="001";
 				RegDst<='X';
-				Branch<='1' after 2ns;
+				Branch<='1';
 				memToReg<='X';
 				memRead<='0';
 				memWrite<='0';
