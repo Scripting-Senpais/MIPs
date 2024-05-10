@@ -48,6 +48,7 @@ component control
 	opCode: in std_logic_vector(5 downto 0);
 	RegDst: out	std_logic;
 	Branch: out	std_logic;
+	Bnq: out	std_logic;
 	memRead:out std_logic;
 	memWrite: out std_logic;
 	ALUsrc: out std_logic;
@@ -122,8 +123,10 @@ signal ZERO2 :  STD_LOGIC;
 signal OVERFLOW2 :  STD_LOGIC;
 signal ReadData :  STD_LOGIC_VECTOR(31 downto 0);
 signal mux4_out : std_logic_vector	(31 downto 0);
-signal andGate :  STD_LOGIC;
-
+signal andGateForBeq :  STD_LOGIC; 
+signal andGateForBnq :  STD_LOGIC;
+signal Bnq :  STD_LOGIC;
+signal oneOrTwo : integer range 1 to 2:=1;
 
 
 
@@ -150,11 +153,35 @@ BEGIN
 			memRead<='0' after 1 ns;
 
         elsif clk='1' then
+			
 			prev_pc<=PC;
-			PC <= std_logic_vector(unsigned(PC) + 1) after 1ns;
+			PC <= std_logic_vector(unsigned(PC) + oneOrTwo);  
+			
+			elsif clk='0' then
+			if(Branch='1')then 
+				if(Bnq='0')then
+					if(andGateForBeq='0') then
+					oneOrTwo <= 2;
+					else
+					oneOrTwo <= 1;
+					end if;
+				else  
+					if(andGateForBnq='0') then
+					oneOrTwo <= 2;
+					else
+					oneOrTwo <= 1;
+					end if;
+					
+				
+				end if;
+			else
+				oneOrTwo <= 1;
+				end if;
+			
         end if;
     end process;
-	
+	andGateForBeq<= Branch and ZERO;
+	andGateForBnq<= Bnq and (not ZERO);
 	--mux connected to sign extender and register file to alu
    M1: MUX
    generic map (N => 32)
@@ -203,7 +230,8 @@ BEGIN
        	  funct=>Instruction(5 downto 0),
 	opCode=>Instruction(31 downto 26),
 	RegDst=>RegDst,
-	Branch=>Branch,
+	Branch=>Branch,	 
+	Bnq=>Bnq,
 	memRead=>memRead,
 	memWrite=>memWrite,
 	ALUsrc=>ALUsrc,

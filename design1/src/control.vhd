@@ -7,6 +7,7 @@ entity control is
 	opCode: in std_logic_vector(5 downto 0);
 	RegDst: out	std_logic;
 	Branch: out	std_logic;
+	Bnq: out	std_logic;
 	memRead:out std_logic;
 	memWrite: out std_logic;
 	ALUsrc: out std_logic;
@@ -38,6 +39,7 @@ begin
 				end case;
 				RegDst<='1';
 				Branch<='0';
+				Bnq<='0';
 				memRead<='0';
 				memWrite<='0';
 				ALUsrc<='0';
@@ -49,6 +51,7 @@ begin
 				op<="001";
 				RegDst<='0';
 				Branch<='0';
+				Bnq<='0';
 				memRead<='1';
 				memToReg<='1';
 				memWrite<='0';
@@ -60,7 +63,8 @@ begin
 				when "010101"=>--store
 				op<="001";
 				RegDst<='X';
-				Branch<='0';
+				Branch<='0' ;
+				Bnq<='0';
 				memToReg<='X';
 				memRead<='0';
 				memWrite<='1';
@@ -71,7 +75,8 @@ begin
 				when "100000"=>--branch equal 
 				op<="001";
 				RegDst<='X';
-				Branch<='1';
+				Branch<='1'after 2ns;
+				Bnq<='0';
 				memToReg<='X';
 				memRead<='0';
 				memWrite<='0';
@@ -82,7 +87,8 @@ begin
 				when "000001"=> --branch not equal
 				op<="001";
 				RegDst<='X';
-				Branch<='1';
+				Branch<='1'after 2ns;
+				Bnq<='1';
 				memToReg<='X';
 				memRead<='0';
 				memWrite<='0';

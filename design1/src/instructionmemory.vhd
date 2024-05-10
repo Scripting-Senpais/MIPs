@@ -78,7 +78,7 @@ SIGNAL IM : RAM_16_X_32 := (											-- opcode   s1	  s2	d	shamt  funct
 	);																														
 BEGIN
 																		   -- 16 in binary in 32 bits
-Instruction <= 	"00000000000000000000000000000000" WHEN ReadAddress = "00000000000000000000000000010000" ELSE
-				IM( (TO_INTEGER(UNSIGNED(ReadAddress))) );
+Instruction <= 	"00000000000000000000000000000000" WHEN ReadAddress = "00000000000000000000000000000000" ELSE
+				IM( (TO_INTEGER(UNSIGNED(ReadAddress)))-1 );
 	
 END Behavioral;

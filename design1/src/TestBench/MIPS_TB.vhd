@@ -52,13 +52,15 @@ begin
 		);
 
 	process 																   												   
-	begin 	
+	begin 
+		reset <= '1';
 		wait for 5 ns;
+		reset <= '0';
 	for i in 0 to 100 loop
             clk <= '1';
             wait for 5 ns;
             clk <= '0';
-            wait for 1 ns;
+            wait for 2 ns;
         end loop;
         wait;
 			
