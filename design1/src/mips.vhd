@@ -13,9 +13,7 @@ end MIPs;
 
 architecture MIPs of MIPs is 
 signal PC : STD_LOGIC_VECTOR(31 DOWNTO 0) := "00000000000000000000000000000000";
-    signal prev_PC : STD_LOGIC_VECTOR(31 DOWNTO 0) := (others => '0');
-    signal lastBranch : STD_LOGIC_VECTOR(31 DOWNTO 0) := (others => '0');
-    signal branchExecuted : BOOLEAN := FALSE;  -- Flag to track if branch executed
+    signal prev_PC : STD_LOGIC_VECTOR(31 DOWNTO 0);
 
 
 
@@ -76,8 +74,7 @@ component alu
 	A2 : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
 	ALU_CONTROL : IN STD_LOGIC_VECTOR (2 DOWNTO 0);
 	ALU_RESULT : OUT STD_LOGIC_VECTOR (31 DOWNTO 0);
-	ZERO : OUT STD_LOGIC;
-	OVERFLOW : OUT STD_LOGIC
+	ZERO : OUT STD_LOGIC
 		   );
 end component;	
 
@@ -104,29 +101,31 @@ signal mux_out : std_logic_vector	(31 downto 0);
 signal Instruction: STD_LOGIC_VECTOR(31 DOWNTO 0);
 signal RegDst: std_logic;
 signal mux2_out : std_logic_vector(4 downto 0);
-signal next_pc:STD_LOGIC_VECTOR(31 DOWNTO 0);
-signal next_pc_for_branch:STD_LOGIC_VECTOR(31 DOWNTO 0);
 signal RegWrite: std_logic;
 signal mux3_out : std_logic_vector	(31 downto 0);
 signal ReadData1 :	STD_LOGIC_VECTOR (31 DOWNTO 0);
 signal	Branch: 	std_logic;
-signal	memRead: std_logic;
-signal	memWrite:  std_logic;
+signal	memRead: std_logic:='0';
+signal	memWrite:  std_logic:='0';
 signal	memToReg:  std_logic;
 signal op: std_logic_vector(2 downto 0);
 signal ALU_RESULT :  STD_LOGIC_VECTOR (31 DOWNTO 0);
 signal ZERO :  STD_LOGIC;
-signal OVERFLOW :  STD_LOGIC;
-signal ZERO1 :  STD_LOGIC;
-signal OVERFLOW1 :  STD_LOGIC;
-signal ZERO2 :  STD_LOGIC;
-signal OVERFLOW2 :  STD_LOGIC;
 signal ReadData :  STD_LOGIC_VECTOR(31 downto 0);
 signal mux4_out : std_logic_vector	(31 downto 0);
 signal andGateForBeq :  STD_LOGIC; 
 signal andGateForBnq :  STD_LOGIC;
 signal Bnq :  STD_LOGIC;
-signal oneOrTwo : integer range 1 to 2:=1;
+signal oneOrTwo : integer range 1 to 2:=1; 
+
+
+
+signal WriteData :  STD_LOGIC_VECTOR (31 DOWNTO 0);
+signal ReadRegister1 :  STD_LOGIC_VECTOR (4 DOWNTO 0);
+signal	ReadRegister2 : STD_LOGIC_VECTOR (4 DOWNTO 0);
+signal	WriteRegister :  STD_LOGIC_VECTOR (4 DOWNTO 0);
+
+signal Address :  STD_LOGIC_VECTOR(31 downto 0);
 
 
 
@@ -146,18 +145,19 @@ BEGIN
 	
 		if reset = '1' then
             PC <= (others => '0');
-            prev_PC <= (others => '0');
-            lastBranch <= (others => '0');
-            branchExecuted <= FALSE;
-			MemWrite<='0' after 1 ns;
-			memRead<='0' after 1 ns;
+			
+						
 
         elsif clk='1' then
 			
 			prev_pc<=PC;
 			PC <= std_logic_vector(unsigned(PC) + oneOrTwo);  
 			
-			elsif clk='0' then
+		elsif clk='0' then
+	
+			
+	 			  
+			
 			if(Branch='1')then 
 				if(Bnq='0')then
 					if(andGateForBeq='0') then
@@ -246,8 +246,8 @@ BEGIN
 	A2 =>mux_out ,
 	ALU_CONTROL =>op ,
 	ALU_RESULT =>ALU_RESULT ,
-	ZERO=>ZERO ,
-	OVERFLOW=>OVERFLOW 
+	ZERO=>ZERO 
+	 
 	);
 	DM: datamemory
 	port map ( 

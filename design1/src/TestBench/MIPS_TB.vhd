@@ -8,7 +8,7 @@
 ---------------------------------------------------------------------------------------------------
 --
 -- File        : $DSN\src\TestBench\mips_TB.vhd
--- Generated   : 5/9/2024, 7:51 PM
+-- Generated   : 5/10/2024, 6:46 PM
 -- From        : $DSN\src\mips.vhd
 -- By          : Active-HDL Built-in Test Bench Generator ver. 1.2s
 --
@@ -50,15 +50,14 @@ begin
 			clk => clk,
 			reset => reset
 		);
-
-	process 																   												   
-	begin 
-		reset <= '1';
-		wait for 5 ns;
+		process
+		begin
+	reset <= '1';
+		wait for 0.3 ns;
 		reset <= '0';
 	for i in 0 to 100 loop
             clk <= '1';
-            wait for 5 ns;
+            wait for 3 ns;
             clk <= '0';
             wait for 2 ns;
         end loop;

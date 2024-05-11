@@ -44,7 +44,8 @@ begin
 				memWrite<='0';
 				ALUsrc<='0';
 				memToReg<='0';
-				RegWrite<='1' after 10 ns;
+				
+				RegWrite<='1'after 0.5ns;
 			
 				
 				when "101010"=>--load 
@@ -52,11 +53,11 @@ begin
 				RegDst<='0';
 				Branch<='0';
 				Bnq<='0';
-				memRead<='1';
+				memRead<='1'after 0.1ns;
 				memToReg<='1';
-				memWrite<='0';
+				memWrite<='0'after 0.1ns;
 				ALUsrc<='1';
-				RegWrite<='1' after 10 ns;
+				RegWrite<='1'after 0.5ns;
 				
 				
 				
@@ -66,34 +67,34 @@ begin
 				Branch<='0' ;
 				Bnq<='0';
 				memToReg<='X';
-				memRead<='0';
-				memWrite<='1';
+				memRead<='0'after 0.1ns;
+				memWrite<='1'after 0.1ns;
 				ALUsrc<='1';
-				RegWrite<='0' after 10 ns;
+				RegWrite<='0';
 				
 				
 				when "100000"=>--branch equal 
-				op<="001";
+				op<="011";
 				RegDst<='X';
-				Branch<='1'after 2ns;
+				Branch<='1'after 0.5ns;
 				Bnq<='0';
 				memToReg<='X';
 				memRead<='0';
 				memWrite<='0';
 				ALUsrc<='0';
-				RegWrite<='0' after 10 ns;
+				RegWrite<='0';
 				
 				
 				when "000001"=> --branch not equal
-				op<="001";
+				op<="011";
 				RegDst<='X';
-				Branch<='1'after 2ns;
+				Branch<='1'after 0.5ns;
 				Bnq<='1';
 				memToReg<='X';
 				memRead<='0';
 				memWrite<='0';
 				ALUsrc<='0';
-				RegWrite<='0' after 10 ns;
+				RegWrite<='0';
 				when others => null;
 				RegDst<='0';
 				op<="000";
