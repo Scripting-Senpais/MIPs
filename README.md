@@ -1,7 +1,7 @@
 # Single Cycle MIPS ISA 32-bit Processor Implementation in VHDL
 
 ## Introduction
-This project is a Single Cycle MIPS ISA 32-bit Processor Implementation. It is implemented using VHDL (VHSIC Hardware Description Language). MIPS (Microprocessor without Interlocked Pipelined Stages) is a reduced instruction set computer (RISC) instruction set architecture (ISA).
+This project is a Single Cycle MIPS ISA 32-bit Processor Implementation. It is implemented using VHDL. MIPS (Microprocessor without Interlocked Pipelined Stages) is a reduced instruction set computer (RISC) instruction set architecture (ISA).
 
 ## Features
 - **Word Size**: Each word in this processor is a 32-bit.
