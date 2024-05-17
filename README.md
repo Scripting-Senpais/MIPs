@@ -12,7 +12,7 @@ This project is a Single Cycle MIPS ISA 32-bit Processor Implementation. It is i
 
 ## Schematic diagram using Active HDL
 
-![Schematic Diagram](https://github.com/farra-h/E-Voting/assets/134429241/badd8ebc-ed5a-4958-9105-950c9718946e)
+![Schematic Diagram](https://github.com/farra-h/E-Voting/assets/134429241/26df6590-fd13-4f24-be0d-913dfcc1cbde)
 
 ## The simulation of the final project
 ![1](https://github.com/farra-h/E-Voting/assets/134429241/e63b8ff4-5024-495d-9faa-b5cd3ba0d4cd)
